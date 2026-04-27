@@ -14,7 +14,7 @@ export default function InstallCommand() {
   };
 
   return (
-    <div className="flex items-center gap-4 bg-vex-card border border-vex-border rounded-md px-4 py-2">
+    <div className="mt-7 flex items-center gap-4 bg-vex-card border border-vex-border rounded-md px-4 py-2">
       <pre className="font-mono text-sm">
         <code>
           <span className="text-vex-accent">$</span>{" "}

@@ -1,8 +1,26 @@
-"use client";
-
 import Image from "next/image";
+import { Layers, Palette, Zap } from "lucide-react";
 
-import InstallCommand from "@/components/InstallCommand";
+import InstallCommand from "@/app/_components/InstallCommand";
+import FeatureCard from "@/app/_components/FeatureCard";
+
+const FEATURES = [
+  {
+    icon: <Palette className="size-5 text-vex-accent" />,
+    title: "Themeable",
+    desc: "Token-based design system. Override any color, radius, or spacing with CSS variables — no rebuild required.",
+  },
+  {
+    icon: <Layers className="size-5 text-vex-accent" />,
+    title: "Composable",
+    desc: "Headless primitives meet styled defaults. Use the parts you want, override the parts you don't.",
+  },
+  {
+    icon: <Zap className="size-5 text-vex-accent" />,
+    title: "Production-ready",
+    desc: "Tree-shakeable, typed, ARIA-correct. Ships with SSR support out of the box.",
+  },
+];
 
 export default function Home() {
   return (
@@ -26,6 +44,18 @@ export default function Home() {
       </p>
 
       <InstallCommand />
+      <div className="max-w-6xl mx-auto px-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {FEATURES.map(({ icon, title, desc }) => (
+            <FeatureCard
+              key={title}
+              icon={icon}
+              title={title}
+              description={desc}
+            />
+          ))}
+        </div>
+      </div>
     </main>
   );
 }
