@@ -1,20 +1,44 @@
-import Image from "next/image";
+import { Layers, Palette, Zap } from "lucide-react";
+
+import { FeatureCard } from "@/components/marketing/feature-card";
+import { Hero } from "@/components/marketing/hero";
+import { ThemeToggle } from "@/components/marketing/theme-toggle";
+
+const FEATURES = [
+  {
+    icon: Palette,
+    title: "Themeable",
+    description:
+      "Token-based design system. Override any color, radius, or spacing with CSS variables — no rebuild required.",
+  },
+  {
+    icon: Layers,
+    title: "Composable",
+    description:
+      "Headless primitives meet styled defaults. Use the parts you want, override the parts you don't.",
+  },
+  {
+    icon: Zap,
+    title: "Production-ready",
+    description:
+      "Tree-shakeable, typed, ARIA-correct. Ships with SSR support out of the box.",
+  },
+];
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 py-24">
-      <Image
-        src="/vex.png"
-        alt="Vex mascot"
-        width={144}
-        height={144}
-        priority
-        className="mb-8 drop-shadow-[0_8px_30px_rgba(94,234,212,0.25)]"
-      />
-      <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-vex-heading">
-        Vex<span className="text-vex-accent">Kit</span>
-      </h1>
-      <p className="mt-4 text-vex-text text-lg">Coming soon</p>
-    </main>
+    <>
+      <ThemeToggle />
+      <main>
+        <Hero />
+        <section className="mx-auto -mt-8 max-w-6xl px-8 pb-24">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            {FEATURES.map((f) => (
+              <FeatureCard key={f.title} {...f} />
+            ))}
+          </div>
+        </section>
+      </main>
+    </>
   );
 }

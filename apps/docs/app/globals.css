@@ -3,15 +3,21 @@
 @custom-variant light (&:where([data-theme="light"] *));
 
 :root {
+  /* Public role tokens — see THEMING.md */
   --vex-bg: #0f172a;
   --vex-card: #1e293b;
   --vex-border: #334155;
   --vex-heading: #e2e8f0;
-  --vex-text: #94a3b8;
-  --vex-text-muted: #64748b;
+  --vex-text: #cbd5e1;
+  --vex-text-muted: #94a3b8;
   --vex-accent: #5eead4;
   --vex-accent-hover: #2dd4bf;
   --vex-accent-active: #14b8a6;
+  --vex-gold: #d4a017;
+
+  /* Decorative tokens — overridable, used by .grid-bg */
+  --vex-grid-line: rgba(51, 65, 85, 0.35);
+  --vex-grid-glow: rgba(94, 234, 212, 0.18);
 
   color-scheme: dark;
 }
@@ -21,11 +27,15 @@
   --vex-card: #ffffff;
   --vex-border: #e2e8f0;
   --vex-heading: #0f172a;
-  --vex-text: #64748b;
-  --vex-text-muted: #94a3b8;
+  --vex-text: #475569;
+  --vex-text-muted: #64748b;
   --vex-accent: #0f766e;
   --vex-accent-hover: #0d9488;
   --vex-accent-active: #134e4a;
+  --vex-gold: #d4a017;
+
+  --vex-grid-line: rgba(203, 213, 225, 0.6);
+  --vex-grid-glow: rgba(20, 184, 166, 0.14);
 
   color-scheme: light;
 }
@@ -40,9 +50,14 @@
   --color-vex-accent: var(--vex-accent);
   --color-vex-accent-hover: var(--vex-accent-hover);
   --color-vex-accent-active: var(--vex-accent-active);
+  --color-vex-gold: var(--vex-gold);
 
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -50,4 +65,52 @@ body {
   background: var(--vex-bg);
   color: var(--vex-heading);
   min-height: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--vex-card);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--vex-border);
+  background-clip: padding-box;
+}
+
+/* Hero backdrop: radial accent glow + 1px line grid */
+.grid-bg {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, var(--vex-grid-glow), transparent 60%),
+    linear-gradient(to right, var(--vex-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--vex-grid-line) 1px, transparent 1px);
+  background-size: auto, 56px 56px, 56px 56px;
+  background-position: center top, center, center;
+}
+
+/* Keyboard focus ring — opt-in via class */
+.vk-ring:focus-visible {
+  outline: 2px solid var(--vex-accent);
+  outline-offset: 2px;
+}
+
+@keyframes vk-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.page-fade {
+  animation: vk-fade-in 220ms ease-out;
 }

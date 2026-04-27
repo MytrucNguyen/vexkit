@@ -18,15 +18,20 @@ export const metadata: Metadata = {
     "Accessible, composable, themeable React components distributed as a shadcn-compatible registry.",
 };
 
+const themeScript = `(function(){try{var t=localStorage.getItem('vex-theme');document.documentElement.dataset.theme=t==='light'?'light':'dark'}catch(e){document.documentElement.dataset.theme='dark'}})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"
-      data-theme="dark"
+      suppressHydrationWarning
       className={`${inter.variable} ${jetbrainsMono.variable}`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="font-sans antialiased min-h-screen">{children}</body>
     </html>
   );
