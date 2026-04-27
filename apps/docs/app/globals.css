@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@custom-variant light (&:where([data-theme="light"] *));
+
+:root {
+  --vex-bg: #0f172a;
+  --vex-card: #1e293b;
+  --vex-border: #334155;
+  --vex-heading: #e2e8f0;
+  --vex-text: #94a3b8;
+  --vex-text-muted: #64748b;
+  --vex-accent: #5eead4;
+  --vex-accent-hover: #2dd4bf;
+  --vex-accent-active: #14b8a6;
+
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --vex-bg: #f8fafc;
+  --vex-card: #ffffff;
+  --vex-border: #e2e8f0;
+  --vex-heading: #0f172a;
+  --vex-text: #64748b;
+  --vex-text-muted: #94a3b8;
+  --vex-accent: #0f766e;
+  --vex-accent-hover: #0d9488;
+  --vex-accent-active: #134e4a;
+
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-vex-bg: var(--vex-bg);
+  --color-vex-card: var(--vex-card);
+  --color-vex-border: var(--vex-border);
+  --color-vex-heading: var(--vex-heading);
+  --color-vex-text: var(--vex-text);
+  --color-vex-text-muted: var(--vex-text-muted);
+  --color-vex-accent: var(--vex-accent);
+  --color-vex-accent-hover: var(--vex-accent-hover);
+  --color-vex-accent-active: var(--vex-accent-active);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+html,
+body {
+  background: var(--vex-bg);
+  color: var(--vex-heading);
+  min-height: 100%;
+}
