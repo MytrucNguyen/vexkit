@@ -22,6 +22,8 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --vex-accent: #5eead4;
   --vex-accent-hover: #2dd4bf;
   --vex-accent-active: #14b8a6;
+  --vex-danger: #e11d48;
+  --vex-danger-hover: #be123c;
   --vex-gold: #d4a017;
   color-scheme: dark;
 }
@@ -36,6 +38,8 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --vex-accent: #0f766e;
   --vex-accent-hover: #0d9488;
   --vex-accent-active: #134e4a;
+  --vex-danger: #dc2626;
+  --vex-danger-hover: #b91c1c;
   --vex-gold: #d4a017;
   color-scheme: light;
 }
@@ -50,6 +54,8 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --color-vex-accent: var(--vex-accent);
   --color-vex-accent-hover: var(--vex-accent-hover);
   --color-vex-accent-active: var(--vex-accent-active);
+  --color-vex-danger: var(--vex-danger);
+  --color-vex-danger-hover: var(--vex-danger-hover);
   --color-vex-gold: var(--vex-gold);
 }`;
 

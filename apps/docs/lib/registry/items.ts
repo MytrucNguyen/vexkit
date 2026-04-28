@@ -22,6 +22,23 @@ export const REGISTRY_ITEMS: RegistrySource[] = [
       },
     ],
   },
+  {
+    name: "vex-button",
+    type: "registry:ui",
+    title: "Button",
+    description:
+      "Triggers an action. Five style variants and three sizes, with loading and disabled states plus leading/trailing icon slots.",
+    author: REGISTRY_AUTHOR,
+    dependencies: ["class-variance-authority"],
+    files: [
+      {
+        diskPath: "registry/default/ui/vex-button.tsx",
+        registryPath: "ui/vex-button.tsx",
+        type: "registry:ui",
+        target: "",
+      },
+    ],
+  },
 ];
 
 export function getRegistryItem(name: string): RegistrySource | undefined {
