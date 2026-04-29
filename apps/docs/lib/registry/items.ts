@@ -39,6 +39,39 @@ export const REGISTRY_ITEMS: RegistrySource[] = [
       },
     ],
   },
+  {
+    name: "vex-input",
+    type: "registry:ui",
+    title: "Input",
+    description:
+      "Single-line text field. Supports labels, hints, error states, leading/trailing icons, and any native input type. Three sizes, with disabled state and accessible label/error wiring.",
+    author: REGISTRY_AUTHOR,
+    dependencies: ["class-variance-authority"],
+    files: [
+      {
+        diskPath: "registry/default/ui/vex-input.tsx",
+        registryPath: "ui/vex-input.tsx",
+        type: "registry:ui",
+        target: "",
+      },
+    ],
+  },
+  {
+    name: "vex-card",
+    type: "registry:ui",
+    title: "Card",
+    description:
+      "A surface container with padding, a border, and a subtle background. The base for most layout compositions — forwards className and all native div attributes.",
+    author: REGISTRY_AUTHOR,
+    files: [
+      {
+        diskPath: "registry/default/ui/vex-card.tsx",
+        registryPath: "ui/vex-card.tsx",
+        type: "registry:ui",
+        target: "",
+      },
+    ],
+  },
 ];
 
 export function getRegistryItem(name: string): RegistrySource | undefined {

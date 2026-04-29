@@ -19,6 +19,7 @@ These are the contract. Override them; everything else is internal.
 | `--vex-accent-active` | `#14b8a6` | `#134e4a` | Accent active/pressed state |
 | `--vex-danger` | `#e11d48` | `#dc2626` | Destructive action background (paired with white text) |
 | `--vex-danger-hover` | `#be123c` | `#b91c1c` | Destructive action hover state |
+| `--vex-danger-fg` | `#fb7185` | `#b91c1c` | Destructive foreground (error text & error border) on `--vex-card` / `--vex-bg` |
 | `--vex-gold` | `#d4a017` | `#d4a017` | Brand-fixed accent (decorative; not theme-adaptive) |
 
 Two decorative tokens drive the hero backdrop. Override these to retheme `.grid-bg`:
@@ -102,6 +103,7 @@ Background: `#0f172a` (L = 0.0088). Card: `#1e293b` (L = 0.0218).
 | `--vex-text` `#cbd5e1` | 12.03 | 9.85 | ✓ | ✓ |
 | `--vex-text-muted` `#94a3b8` | 6.96 | 5.70 | ✓ | ✓ |
 | `--vex-accent` `#5eead4` | 12.07 | 9.89 | ✓ | ✓ |
+| `--vex-danger-fg` `#fb7185` | 6.63 | 5.44 | ✓ | ✓ |
 | `--vex-gold` `#d4a017` | 7.61 | 6.23 | ✓ | ✓ |
 
 White text (`#ffffff`) on destructive surfaces:
@@ -121,6 +123,7 @@ Background: `#f8fafc` (L = 0.9536). Card: `#ffffff` (L = 1.0).
 | `--vex-text` `#475569` | 7.24 | 7.58 | ✓ | ✓ |
 | `--vex-text-muted` `#64748b` | 4.55 | 4.76 | ✓ | ✓ |
 | `--vex-accent` `#0f766e` | 5.23 | 5.48 | ✓ | ✓ |
+| `--vex-danger-fg` `#b91c1c` | 6.18 | 6.47 | ✓ | ✓ |
 | `--vex-gold` `#d4a017` | **2.24** | **2.35** | ✗ | ✗ |
 
 White text (`#ffffff`) on destructive surfaces:

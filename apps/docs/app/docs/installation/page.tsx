@@ -24,6 +24,7 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --vex-accent-active: #14b8a6;
   --vex-danger: #e11d48;
   --vex-danger-hover: #be123c;
+  --vex-danger-fg: #fb7185;
   --vex-gold: #d4a017;
   color-scheme: dark;
 }
@@ -40,6 +41,7 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --vex-accent-active: #134e4a;
   --vex-danger: #dc2626;
   --vex-danger-hover: #b91c1c;
+  --vex-danger-fg: #b91c1c;
   --vex-gold: #d4a017;
   color-scheme: light;
 }
@@ -56,6 +58,7 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --color-vex-accent-active: var(--vex-accent-active);
   --color-vex-danger: var(--vex-danger);
   --color-vex-danger-hover: var(--vex-danger-hover);
+  --color-vex-danger-fg: var(--vex-danger-fg);
   --color-vex-gold: var(--vex-gold);
 }`;
 
