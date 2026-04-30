@@ -25,6 +25,8 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --vex-danger: #e11d48;
   --vex-danger-hover: #be123c;
   --vex-danger-fg: #fb7185;
+  --vex-success-fg: #10b981;
+  --vex-warning-fg: #f59e0b;
   --vex-gold: #d4a017;
   color-scheme: dark;
 }
@@ -42,6 +44,8 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --vex-danger: #dc2626;
   --vex-danger-hover: #b91c1c;
   --vex-danger-fg: #b91c1c;
+  --vex-success-fg: #047857;
+  --vex-warning-fg: #92400e;
   --vex-gold: #d4a017;
   color-scheme: light;
 }
@@ -59,6 +63,8 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
   --color-vex-danger: var(--vex-danger);
   --color-vex-danger-hover: var(--vex-danger-hover);
   --color-vex-danger-fg: var(--vex-danger-fg);
+  --color-vex-success-fg: var(--vex-success-fg);
+  --color-vex-warning-fg: var(--vex-warning-fg);
   --color-vex-gold: var(--vex-gold);
 }`;
 

@@ -72,6 +72,39 @@ export const REGISTRY_ITEMS: RegistrySource[] = [
       },
     ],
   },
+  {
+    name: "vex-modal",
+    type: "registry:ui",
+    title: "Modal",
+    description:
+      "An accessible dialog with focus trap, ESC-to-close, and overlay click handling. Built on Radix Dialog primitives. Controlled via open/onClose; supports title, optional description, footer slot, and children body.",
+    author: REGISTRY_AUTHOR,
+    dependencies: ["@radix-ui/react-dialog"],
+    files: [
+      {
+        diskPath: "registry/default/ui/vex-modal.tsx",
+        registryPath: "ui/vex-modal.tsx",
+        type: "registry:ui",
+        target: "",
+      },
+    ],
+  },
+  {
+    name: "vex-badge",
+    type: "registry:ui",
+    title: "Badge",
+    description:
+      "Compact status indicator. Six variants — default, teal, success, warning, danger, outline — using the role-token color set with tinted backgrounds and matching foreground text.",
+    author: REGISTRY_AUTHOR,
+    files: [
+      {
+        diskPath: "registry/default/ui/vex-badge.tsx",
+        registryPath: "ui/vex-badge.tsx",
+        type: "registry:ui",
+        target: "",
+      },
+    ],
+  },
 ];
 
 export function getRegistryItem(name: string): RegistrySource | undefined {

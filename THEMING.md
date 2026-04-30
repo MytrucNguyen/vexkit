@@ -20,6 +20,8 @@ These are the contract. Override them; everything else is internal.
 | `--vex-danger` | `#e11d48` | `#dc2626` | Destructive action background (paired with white text) |
 | `--vex-danger-hover` | `#be123c` | `#b91c1c` | Destructive action hover state |
 | `--vex-danger-fg` | `#fb7185` | `#b91c1c` | Destructive foreground (error text & error border) on `--vex-card` / `--vex-bg` |
+| `--vex-success-fg` | `#10b981` | `#047857` | Success foreground (status badge text & border, success indicators) on `--vex-card` / `--vex-bg` |
+| `--vex-warning-fg` | `#f59e0b` | `#92400e` | Warning foreground (status badge text & border, warning indicators) on `--vex-card` / `--vex-bg` |
 | `--vex-gold` | `#d4a017` | `#d4a017` | Brand-fixed accent (decorative; not theme-adaptive) |
 
 Two decorative tokens drive the hero backdrop. Override these to retheme `.grid-bg`:
@@ -104,6 +106,8 @@ Background: `#0f172a` (L = 0.0088). Card: `#1e293b` (L = 0.0218).
 | `--vex-text-muted` `#94a3b8` | 6.96 | 5.70 | ✓ | ✓ |
 | `--vex-accent` `#5eead4` | 12.07 | 9.89 | ✓ | ✓ |
 | `--vex-danger-fg` `#fb7185` | 6.63 | 5.44 | ✓ | ✓ |
+| `--vex-success-fg` `#10b981` | 7.04 | 5.77 | ✓ | ✓ |
+| `--vex-warning-fg` `#f59e0b` | 8.31 | 6.81 | ✓ | ✓ |
 | `--vex-gold` `#d4a017` | 7.61 | 6.23 | ✓ | ✓ |
 
 White text (`#ffffff`) on destructive surfaces:
@@ -124,6 +128,8 @@ Background: `#f8fafc` (L = 0.9536). Card: `#ffffff` (L = 1.0).
 | `--vex-text-muted` `#64748b` | 4.55 | 4.76 | ✓ | ✓ |
 | `--vex-accent` `#0f766e` | 5.23 | 5.48 | ✓ | ✓ |
 | `--vex-danger-fg` `#b91c1c` | 6.18 | 6.47 | ✓ | ✓ |
+| `--vex-success-fg` `#047857` | 5.24 | 5.48 | ✓ | ✓ |
+| `--vex-warning-fg` `#92400e` | 6.78 | 7.09 | ✓ | ✓ |
 | `--vex-gold` `#d4a017` | **2.24** | **2.35** | ✗ | ✗ |
 
 White text (`#ffffff`) on destructive surfaces:
