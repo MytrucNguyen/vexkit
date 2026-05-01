@@ -133,7 +133,7 @@ export default function TooltipPage() {
 
       <Pager
         prev={{ title: "Toggle", path: "/docs/components/toggle" }}
-        next={{ title: "Avatar", path: "/docs/components/avatar" }}
+        next={{ title: "Components", path: "/docs/components" }}
       />
     </>
   );

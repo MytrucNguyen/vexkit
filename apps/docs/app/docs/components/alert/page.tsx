@@ -209,8 +209,8 @@ export default function AlertPage() {
       </ul>
 
       <Pager
-        prev={{ title: "Avatar", path: "/docs/components/avatar" }}
-        next={{ title: "Tabs", path: "/docs/components/tabs" }}
+        prev={{ title: "Quick Start", path: "/docs/quick-start" }}
+        next={{ title: "Avatar", path: "/docs/components/avatar" }}
       />
     </>
   );

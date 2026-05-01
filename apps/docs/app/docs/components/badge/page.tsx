@@ -98,8 +98,8 @@ export default function BadgePage() {
       <PropsTable rows={PROPS_ROWS} />
 
       <Pager
-        prev={{ title: "Modal", path: "/docs/components/modal" }}
-        next={{ title: "Toggle", path: "/docs/components/toggle" }}
+        prev={{ title: "Avatar", path: "/docs/components/avatar" }}
+        next={{ title: "Button", path: "/docs/components/button" }}
       />
     </>
   );

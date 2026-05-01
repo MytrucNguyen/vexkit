@@ -285,7 +285,10 @@ export default function TabsPage() {
         </li>
       </ul>
 
-      <Pager prev={{ title: "Alert", path: "/docs/components/alert" }} />
+      <Pager
+        prev={{ title: "Modal", path: "/docs/components/modal" }}
+        next={{ title: "Toggle", path: "/docs/components/toggle" }}
+      />
     </>
   );
 }

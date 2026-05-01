@@ -94,8 +94,8 @@ export default function CardPage() {
       <PropsTable rows={PROPS_ROWS} />
 
       <Pager
-        prev={{ title: "Input", path: "/docs/components/input" }}
-        next={{ title: "Modal", path: "/docs/components/modal" }}
+        prev={{ title: "Button", path: "/docs/components/button" }}
+        next={{ title: "Input", path: "/docs/components/input" }}
       />
     </>
   );

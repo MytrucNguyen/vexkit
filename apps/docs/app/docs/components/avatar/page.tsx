@@ -151,8 +151,8 @@ export default function AvatarPage() {
       <PropsTable rows={PROPS_ROWS} />
 
       <Pager
-        prev={{ title: "Tooltip", path: "/docs/components/tooltip" }}
-        next={{ title: "Alert", path: "/docs/components/alert" }}
+        prev={{ title: "Alert", path: "/docs/components/alert" }}
+        next={{ title: "Badge", path: "/docs/components/badge" }}
       />
     </>
   );

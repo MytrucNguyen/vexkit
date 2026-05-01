@@ -195,8 +195,8 @@ export default function ModalPage() {
       </ul>
 
       <Pager
-        prev={{ title: "Card", path: "/docs/components/card" }}
-        next={{ title: "Badge", path: "/docs/components/badge" }}
+        prev={{ title: "Input", path: "/docs/components/input" }}
+        next={{ title: "Tabs", path: "/docs/components/tabs" }}
       />
     </>
   );

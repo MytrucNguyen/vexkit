@@ -308,8 +308,8 @@ export default function InputPage() {
       </ul>
 
       <Pager
-        prev={{ title: "Button", path: "/docs/components/button" }}
-        next={{ title: "Card", path: "/docs/components/card" }}
+        prev={{ title: "Card", path: "/docs/components/card" }}
+        next={{ title: "Modal", path: "/docs/components/modal" }}
       />
     </>
   );

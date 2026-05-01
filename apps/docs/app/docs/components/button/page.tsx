@@ -205,8 +205,8 @@ export default function ButtonPage() {
       </ul>
 
       <Pager
-        prev={{ title: "Quick Start", path: "/docs/quick-start" }}
-        next={{ title: "Input", path: "/docs/components/input" }}
+        prev={{ title: "Badge", path: "/docs/components/badge" }}
+        next={{ title: "Card", path: "/docs/components/card" }}
       />
     </>
   );
