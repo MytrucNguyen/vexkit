@@ -23,7 +23,7 @@ export function TooltipExample() {
           </Button>
         </Tooltip>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-6">
+      <div className="flex flex-wrap items-center gap-6">
         <Tooltip content="Top side" side="top">
           <Button variant="outline" size="sm">
             Top
