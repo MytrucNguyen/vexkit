@@ -1,32 +1,27 @@
 "use client";
 
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import { GithubMark } from "@/components/icons/github";
 import { useMobileNav } from "@/components/shell/mobile-nav-provider";
 import { ThemeToggle } from "@/components/shell/theme-toggle";
 
 export function Header() {
-  const pathname = usePathname();
-  const { openDrawer } = useMobileNav();
-  const isDocs = pathname?.startsWith("/docs") ?? false;
+  const { open, openDrawer, closeDrawer } = useMobileNav();
 
   return (
     <header className="sticky top-0 z-50 h-14 border-b border-vex-border bg-vex-bg/85 backdrop-blur">
       <div className="flex h-full items-center gap-4 px-4 lg:px-6">
-        {isDocs && (
-          <button
-            type="button"
-            onClick={openDrawer}
-            aria-label="Open navigation"
-            className="vk-ring text-vex-text transition-colors hover:text-vex-heading lg:hidden"
-          >
-            <Menu size={18} aria-hidden />
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={() => (open ? closeDrawer() : openDrawer())}
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          className="vk-ring text-vex-text transition-colors hover:text-vex-heading"
+        >
+          {open ? <X size={18} aria-hidden /> : <Menu size={18} aria-hidden />}
+        </button>
 
         <Link
           href="/"
