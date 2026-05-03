@@ -9,6 +9,8 @@
     "build": "next build && pagefind --site out --output-path out/_pagefind",
     "postbuild": "pnpm sync:pagefind-dev",
     "start": "next start",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "validate:registry": "tsx scripts/validate-registry.ts",
@@ -31,6 +33,7 @@
     "shiki": "^4.0.2"
   },
   "devDependencies": {
+    "@storybook/nextjs-vite": "10.3.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -38,8 +41,10 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "pagefind": "1.5.2",
+    "storybook": "10.3.6",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite": "8.0.10"
   }
 }

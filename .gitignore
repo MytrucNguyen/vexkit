@@ -9,6 +9,7 @@ node_modules/
 dist/
 build/
 out/
+storybook-static/
 
 # logs
 *.log
