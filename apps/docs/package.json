@@ -33,6 +33,7 @@
     "shiki": "^4.0.2"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "10.3.6",
     "@storybook/nextjs-vite": "10.3.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

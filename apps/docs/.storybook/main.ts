@@ -6,7 +6,7 @@ const config: StorybookConfig = {
     name: "@storybook/nextjs-vite",
     options: {},
   },
-  addons: [],
+  addons: ["@storybook/addon-docs"],
 };
 
 export default config;
