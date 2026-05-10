@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import { Mail, Search } from "lucide-react";
+import { useState } from "react";
+import { Eye, EyeOff, Mail, Search } from "lucide-react";
 
 import { Input } from "@/registry/default/ui/vex-input";
 
@@ -58,5 +59,29 @@ export const WithError: Story = {
     label: "Email",
     defaultValue: "not-an-email",
     error: "Enter a valid email address.",
+  },
+};
+
+export const Password: Story = {
+  render: (args) => {
+    const [show, setShow] = useState(false);
+    return (
+      <Input
+        {...args}
+        label="Password"
+        type={show ? "text" : "password"}
+        defaultValue="kitsune-9-tails"
+        rightIcon={
+          <button
+            type="button"
+            onClick={() => setShow((s) => !s)}
+            className="hover:text-vex-heading"
+            aria-label={show ? "Hide password" : "Show password"}
+          >
+            {show ? <EyeOff className="size-4" /> : <Eye className="size-4" />}
+          </button>
+        }
+      />
+    );
   },
 };
