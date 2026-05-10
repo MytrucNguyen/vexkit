@@ -44,3 +44,19 @@ export const WithLeftIcon: Story = {
 export const WithRightIcon: Story = {
   args: { rightIcon: <Search className="size-4" /> },
 };
+
+export const WithHint: Story = {
+  args: {
+    label: "Username",
+    defaultValue: "vex",
+    hint: "Must be 3–20 characters.",
+  },
+};
+
+export const WithError: Story = {
+  args: {
+    label: "Email",
+    defaultValue: "not-an-email",
+    error: "Enter a valid email address.",
+  },
+};
