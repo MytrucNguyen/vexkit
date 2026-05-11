@@ -64,6 +64,7 @@ export const WithError: Story = {
 
 export const Password: Story = {
   render: (args) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks -- Storybook render-fn idiom; arrow IS a function component
     const [show, setShow] = useState(false);
     return (
       <Input

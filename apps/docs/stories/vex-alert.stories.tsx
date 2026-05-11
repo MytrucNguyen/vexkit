@@ -58,6 +58,7 @@ export const WithTitle: Story = {
 
 export const Dismissible: Story = {
   render: (args) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks -- Storybook render-fn idiom; arrow IS a function component
     const [open, setOpen] = useState(true);
     if (!open) {
       return (
