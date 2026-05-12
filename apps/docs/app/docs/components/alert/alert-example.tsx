@@ -19,12 +19,12 @@ export function AlertCloseExample() {
           away.
         </Alert>
       ) : (
-        <p className="text-[13px] text-vex-text-muted">
+        <p className="text-[13px] text-wuko-text-muted">
           Alert dismissed.{" "}
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="text-vex-accent underline-offset-2 hover:underline"
+            className="text-wuko-accent underline-offset-2 hover:underline"
           >
             Restore
           </button>

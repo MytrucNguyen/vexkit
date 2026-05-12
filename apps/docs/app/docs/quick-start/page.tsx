@@ -38,20 +38,20 @@ export default function QuickStartPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Getting Started
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Quick Start
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           Build a sign-in card in two minutes, composing VexKit&apos;s
           primitives the way they&apos;re meant to be composed.
         </p>
       </header>
 
       <H2 id="example">A signed-in card, end to end</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Once you&apos;ve installed each primitive via{" "}
         <code>shadcn add</code> (see Installation), this is the shape of the
         composition: a <code>Card</code> wrapping an <code>Avatar</code> with

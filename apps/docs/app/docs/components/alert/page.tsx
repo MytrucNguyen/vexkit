@@ -96,7 +96,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -106,13 +106,13 @@ export default function AlertPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Alert
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           An inline message block with info, success, warning, and danger
           variants. Each variant ships its own icon, role-token color, and ARIA
           role appropriate to the urgency. Optional title and close button.
@@ -123,7 +123,7 @@ export default function AlertPage() {
       <InstallationTabs name="vex-alert" />
 
       <H2 id="variants">Variants</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Four variants cover the typical message hierarchy. <code>info</code>{" "}
         and <code>success</code> render with{" "}
         <code>role=&quot;status&quot;</code> (polite, queued by the screen
@@ -148,7 +148,7 @@ export default function AlertPage() {
       />
 
       <H2 id="title">With title</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Pass <code>title</code> to render a bolded heading above the body. The
         title takes the variant&apos;s foreground color so it pops against the
         tinted background.
@@ -166,7 +166,7 @@ export default function AlertPage() {
       <CodeBlock lang="tsx" code={TITLE_SAMPLE} />
 
       <H2 id="close">Dismissible</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Pass an <code>onClose</code> callback to render a close button at the
         top-right corner. The Alert does not own the dismissed state. Wire{" "}
         <code>onClose</code> to your own <code>useState</code> so the consumer
@@ -185,7 +185,7 @@ export default function AlertPage() {
       <PropsTable rows={PROPS_ROWS} />
 
       <H2 id="accessibility">Accessibility</H2>
-      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-vex-text">
+      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-wuko-text">
         <li>
           ARIA role is variant-driven, not consumer-overridable.{" "}
           <code>info</code> and <code>success</code> use{" "}

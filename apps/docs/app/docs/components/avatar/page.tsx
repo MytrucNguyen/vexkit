@@ -93,7 +93,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -103,13 +103,13 @@ export default function AvatarPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Avatar
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           A user&apos;s photo, initials, or fallback character built on Radix
           Avatar: automatic image loading state with fallback during load
           and on error. Supports sm/md/lg sizes plus an optional status dot
@@ -121,7 +121,7 @@ export default function AvatarPage() {
       <InstallationTabs name="vex-avatar" />
 
       <H2 id="sizes">Sizes</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Three sizes: sm (28px), md (40px), lg (56px). Pick by container
         density: sm for table rows, md for inline mentions, lg for profile
         headers.
@@ -136,7 +136,7 @@ export default function AvatarPage() {
       />
 
       <H2 id="status">With status</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Pass <code>status</code> to render a presence dot at the bottom-right
         corner. Three states: online (green), away (amber), offline (muted).
         The dot includes an <code>aria-label</code> so screen readers announce

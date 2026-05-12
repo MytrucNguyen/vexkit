@@ -169,7 +169,7 @@ const TRIGGER_PROPS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -179,13 +179,13 @@ export default function TabsPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Tabs
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           A roving-focus tab list with full keyboard navigation (arrow keys,
           Home, End) and an animated active indicator. Built on Radix Tabs.
         </p>
@@ -195,7 +195,7 @@ export default function TabsPage() {
       <InstallationTabs name="vex-tabs" />
 
       <H2 id="usage">Usage</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Tabs is a four-piece compound API: <code>Tabs</code> (Root, state
         container), <code>TabsList</code> (the row of triggers),{" "}
         <code>TabsTrigger</code> (one per tab, sibling under TabsList), and{" "}
@@ -213,7 +213,7 @@ export default function TabsPage() {
       />
 
       <H2 id="controlled">Controlled</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         For full control over the active tab (to sync with URL, server state,
         or external buttons), pass <code>value</code> and{" "}
         <code>onValueChange</code>. Below, the row of buttons under the tabs
@@ -229,7 +229,7 @@ export default function TabsPage() {
       />
 
       <H2 id="aschild">As trigger (asChild)</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Pass <code>asChild</code> to <code>TabsTrigger</code> to substitute
         your own element as the trigger. Radix applies the trigger&apos;s
         props (role, data-state, focus management) to your child. The most
@@ -246,22 +246,22 @@ export default function TabsPage() {
       />
 
       <H2 id="props">Props</H2>
-      <p className="mb-3 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-3 text-[14px] leading-relaxed text-wuko-text">
         <code>Tabs</code> (Root):
       </p>
       <PropsTable rows={TABS_PROPS} />
-      <p className="mb-3 mt-6 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-3 mt-6 text-[14px] leading-relaxed text-wuko-text">
         <code>TabsTrigger</code>:
       </p>
       <PropsTable rows={TRIGGER_PROPS} />
-      <p className="mt-6 text-[14px] leading-relaxed text-vex-text">
+      <p className="mt-6 text-[14px] leading-relaxed text-wuko-text">
         <code>TabsList</code> and <code>TabsContent</code> are thin wrappers
         around their Radix counterparts and accept all of those primitives&apos;
         props.
       </p>
 
       <H2 id="accessibility">Accessibility</H2>
-      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-vex-text">
+      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-wuko-text">
         <li>
           Roving focus: arrow keys (Left/Right for horizontal, Up/Down for
           vertical), Home (first tab), End (last tab). Tabs not currently

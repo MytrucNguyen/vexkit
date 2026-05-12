@@ -73,10 +73,10 @@ export default function ComponentsIndexPage() {
   return (
     <>
       <header className="mb-10">
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Components
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           Browse the full set of VexKit components. Each one is themeable,
           accessible, and ships with full keyboard support.
         </p>
@@ -87,12 +87,12 @@ export default function ComponentsIndexPage() {
           <Link
             key={slug}
             href={`/docs/components/${slug}`}
-            className="group rounded-lg border border-vex-border p-5 transition-colors hover:border-vex-accent/50 hover:bg-vex-card/40"
+            className="group rounded-lg border border-wuko-border p-5 transition-colors hover:border-wuko-accent/50 hover:bg-wuko-card/40"
           >
-            <div className="mb-1.5 text-base font-semibold text-vex-heading group-hover:text-vex-accent">
+            <div className="mb-1.5 text-base font-semibold text-wuko-heading group-hover:text-wuko-accent">
               {name}
             </div>
-            <p className="text-[13.5px] leading-relaxed text-vex-text-muted">
+            <p className="text-[13.5px] leading-relaxed text-wuko-text-muted">
               {description}
             </p>
           </Link>

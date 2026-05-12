@@ -48,7 +48,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -58,13 +58,13 @@ export default function BadgePage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Badge
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           Compact status indicator. Six variants (default, teal, success,
           warning, danger, outline) using the role-token color set with
           tinted backgrounds and matching foreground text.
@@ -75,7 +75,7 @@ export default function BadgePage() {
       <InstallationTabs name="vex-badge" />
 
       <H2 id="variants">Variants</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Each tinted variant maps to a single role token: <code>teal</code> →{" "}
         <code>--vex-accent</code>, <code>success</code> →{" "}
         <code>--vex-success-fg</code>, <code>warning</code> →{" "}

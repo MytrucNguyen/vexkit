@@ -96,7 +96,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -106,13 +106,13 @@ export default function ModalPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Modal
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           An accessible dialog with focus trap, ESC-to-close, and overlay click
           handling. Built on Radix Dialog primitives. Controlled via{" "}
           <code>open</code> / <code>onClose</code>; supports title, optional
@@ -124,7 +124,7 @@ export default function ModalPage() {
       <InstallationTabs name="vex-modal" />
 
       <H2 id="usage">Usage</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Modal is fully controlled. Hold the open state in your component,
         render the trigger separately, and pass <code>open</code> and{" "}
         <code>onClose</code> down. Radix handles focus trap, ESC,
@@ -144,7 +144,7 @@ export default function ModalPage() {
       <PropsTable rows={PROPS_ROWS} />
 
       <H2 id="accessibility">Accessibility</H2>
-      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-vex-text">
+      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-wuko-text">
         <li>
           <strong>Focus trap.</strong> While open, keyboard focus is trapped
           inside the dialog. Tab and Shift-Tab cycle through the

@@ -101,7 +101,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -111,13 +111,13 @@ export default function TogglePage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Toggle
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           A two-state switch built on Radix Switch. Controlled via{" "}
           <code>checked</code> / <code>onChange</code>; supports sm and md
           sizes, optional inline label, and disabled state. For
@@ -129,7 +129,7 @@ export default function TogglePage() {
       <InstallationTabs name="vex-toggle" />
 
       <H2 id="usage">Usage</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Toggle is fully controlled. Hold the boolean state in your component
         and pass <code>checked</code> + <code>onChange</code> down. Radix
         handles the keyboard (Space toggles), focus management, and form

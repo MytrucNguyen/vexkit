@@ -94,7 +94,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -104,13 +104,13 @@ export default function TooltipPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Tooltip
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           A short, hover- or focus-revealed label built on Radix Tooltip.
           Uncontrolled: Radix manages open/close internally; consumers pass{" "}
           <code>content</code> (the body) and <code>children</code> (the
@@ -123,7 +123,7 @@ export default function TooltipPage() {
       <InstallationTabs name="vex-tooltip" />
 
       <H2 id="usage">Usage</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Wrap any focusable trigger element with a Tooltip. The first row
         below shows tooltips on Buttons (default top side); the second row
         demonstrates all four <code>side</code> options.

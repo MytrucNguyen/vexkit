@@ -59,7 +59,7 @@ export function PasswordField() {
         <button
           type="button"
           onClick={() => setShow((s) => !s)}
-          className="hover:text-vex-heading"
+          className="hover:text-wuko-heading"
           aria-label={show ? "Hide password" : "Show password"}
         >
           {show ? <EyeOff className="size-4" /> : <Eye className="size-4" />}
@@ -141,7 +141,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -151,13 +151,13 @@ export default function InputPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Input
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           Single-line text field. Supports labels, hints, error states, leading
           and trailing icons, and any native input type.
         </p>
@@ -179,7 +179,7 @@ export default function InputPage() {
       />
 
       <H2 id="sizes">Sizes</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Three sizes mirror Button&apos;s sm / md / lg, so inputs and buttons line
         up cleanly when composed in the same row.
       </p>
@@ -193,7 +193,7 @@ export default function InputPage() {
       <CodeBlock lang="tsx" code={SIZES_SAMPLE} />
 
       <H2 id="icons">With icons</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Pass any <code>ReactNode</code> to <code>leftIcon</code> or{" "}
         <code>rightIcon</code>. Left icons are decorative. Pointer events are
         disabled so clicks fall through to the input. Right icons accept pointer
@@ -214,7 +214,7 @@ export default function InputPage() {
       <CodeBlock lang="tsx" code={ICONS_SAMPLE} />
 
       <H2 id="hints">Hints &amp; errors</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         <code>hint</code> renders supportive text below the field.{" "}
         <code>error</code> replaces it with an error message, swaps the border
         to <code>--vex-danger-fg</code>, and sets{" "}
@@ -239,7 +239,7 @@ export default function InputPage() {
       <CodeBlock lang="tsx" code={HINTS_SAMPLE} />
 
       <H2 id="password">Password with toggle</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Compose <code>rightIcon</code> with a clickable visibility toggle. This
         is the design intent behind the asymmetric icon slots. The right slot
         accepts pointer events so an embedded button can receive clicks.
@@ -267,7 +267,7 @@ export default function InputPage() {
       <PropsTable rows={PROPS_ROWS} />
 
       <H2 id="accessibility">Accessibility</H2>
-      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-vex-text">
+      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-wuko-text">
         <li>
           Renders a native <code>&lt;input&gt;</code> element. Tab focus, typing,
           and form submission work without extra wiring.

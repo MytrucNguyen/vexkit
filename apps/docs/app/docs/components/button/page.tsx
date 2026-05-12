@@ -96,7 +96,7 @@ const PROPS_ROWS = [
 
 function ExampleSurface({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-3 flex flex-wrap items-center gap-3 rounded-lg border border-vex-border bg-vex-card/40 p-6">
+    <div className="mb-3 flex flex-wrap items-center gap-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6">
       {children}
     </div>
   );
@@ -106,13 +106,13 @@ export default function ButtonPage() {
   return (
     <>
       <header className="mb-8">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           Components
         </div>
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-vex-heading">
+        <h1 className="mb-3 text-4xl font-extrabold tracking-tight text-wuko-heading">
           Button
         </h1>
-        <p className="text-[15px] leading-relaxed text-vex-text">
+        <p className="text-[15px] leading-relaxed text-wuko-text">
           Triggers an action. Buttons are how users commit to a primary,
           contextual, or destructive intent. Pick the variant that matches the
           weight of the action.
@@ -133,7 +133,7 @@ export default function ButtonPage() {
       />
 
       <H2 id="variants">Variants</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Five variants cover the full hierarchy from{" "}
         <em>this is the action</em> down to <em>subtle, contextual, optional</em>.
       </p>
@@ -155,7 +155,7 @@ export default function ButtonPage() {
       <CodeBlock lang="tsx" code={SIZES_SAMPLE} />
 
       <H2 id="states">States</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         <code>disabled</code> blocks interaction; <code>loading</code> shows a
         spinner before the children, sets <code>aria-busy</code>, and disables
         the button.
@@ -168,7 +168,7 @@ export default function ButtonPage() {
       <CodeBlock lang="tsx" code={STATES_SAMPLE} />
 
       <H2 id="icons">Composing with icons</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Place any icon (or other element) inside the button as a child. Button
         uses flex with a size-aware <code>gap</code>, so spacing matches the
         button&apos;s size automatically.
@@ -190,7 +190,7 @@ export default function ButtonPage() {
       <CodeBlock lang="tsx" code={ICONS_SAMPLE} />
 
       <H2 id="icon-button">Icon button</H2>
-      <p className="mb-4 text-[14px] leading-relaxed text-vex-text">
+      <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Square sizes for icon-only triggers: <code>icon-xs</code>,{" "}
         <code>icon-sm</code>, <code>icon</code>, and <code>icon-lg</code>. An{" "}
         <code>aria-label</code> is required so the button has an accessible
@@ -216,7 +216,7 @@ export default function ButtonPage() {
       <PropsTable rows={PROPS_ROWS} />
 
       <H2 id="accessibility">Accessibility</H2>
-      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-vex-text">
+      <ul className="mt-2 list-disc space-y-2 pl-5 text-[14px] leading-relaxed text-wuko-text">
         <li>
           Renders a native <code>&lt;button&gt;</code> element. Tab focus,
           Enter, and Space activation work without extra wiring.
