@@ -47,12 +47,12 @@ export function NavList({ onNavigate }: NavListProps) {
               href={section.path}
               data-active={pathname === section.path}
               onClick={onNavigate}
-              className="nav-link mb-2 block rounded-md px-3 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted transition-colors hover:text-vex-heading"
+              className="nav-link mb-2 block rounded-md px-3 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted transition-colors hover:text-wuko-heading"
             >
               {section.title}
             </Link>
           ) : (
-            <div className="mb-2 px-3 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+            <div className="mb-2 px-3 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
               {section.title}
             </div>
           )}
@@ -63,7 +63,7 @@ export function NavList({ onNavigate }: NavListProps) {
                   href={it.path}
                   data-active={pathname === it.path}
                   onClick={onNavigate}
-                  className="nav-link block rounded-md px-3 py-1.5 text-[13.5px] text-vex-text transition-colors hover:text-vex-heading"
+                  className="nav-link block rounded-md px-3 py-1.5 text-[13.5px] text-wuko-text transition-colors hover:text-wuko-heading"
                 >
                   {it.label}
                 </Link>
@@ -73,18 +73,18 @@ export function NavList({ onNavigate }: NavListProps) {
         </div>
       ))}
 
-      <div className="mt-8 border-t border-vex-border px-3 pt-6">
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-vex-text-muted">
+      <div className="mt-8 border-t border-wuko-border px-3 pt-6">
+        <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-wuko-text-muted">
           More
         </div>
-        <ul className="space-y-1.5 text-[13.5px] text-vex-text-muted">
+        <ul className="space-y-1.5 text-[13.5px] text-wuko-text-muted">
           {COMING_SOON.map((label) => (
             <li
               key={label}
               className="inline-flex w-full items-center gap-1.5"
             >
               <span>{label}</span>
-              <span className="rounded border border-vex-border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-vex-text-muted">
+              <span className="rounded border border-wuko-border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-wuko-text-muted">
                 soon
               </span>
             </li>

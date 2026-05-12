@@ -97,7 +97,7 @@ export function SearchDialog() {
         <DialogPrimitive.Overlay className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm" />
         <DialogPrimitive.Content
           aria-label="Search documentation"
-          className="fixed left-1/2 top-[20%] z-[101] w-[92vw] max-w-xl -translate-x-1/2 overflow-hidden rounded-xl border border-vex-border bg-vex-card shadow-xl outline-none"
+          className="fixed left-1/2 top-[20%] z-[101] w-[92vw] max-w-xl -translate-x-1/2 overflow-hidden rounded-xl border border-wuko-border bg-wuko-card shadow-xl outline-none"
         >
           <DialogPrimitive.Title className="sr-only">
             Search documentation
@@ -173,20 +173,20 @@ function SearchPalette({ onClose }: { onClose: () => void }) {
   return (
     <Command
       shouldFilter={false}
-      className="[&_[cmdk-group-heading]]:px-3 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:uppercase [&_[cmdk-group-heading]]:tracking-wide [&_[cmdk-group-heading]]:text-vex-text-muted"
+      className="[&_[cmdk-group-heading]]:px-3 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:uppercase [&_[cmdk-group-heading]]:tracking-wide [&_[cmdk-group-heading]]:text-wuko-text-muted"
     >
-      <div className="border-b border-vex-border px-4">
+      <div className="border-b border-wuko-border px-4">
         <Command.Input
           value={query}
           onValueChange={setQuery}
           autoFocus
           placeholder="Search documentation…"
-          className="h-12 w-full bg-transparent text-sm text-vex-heading placeholder:text-vex-text-muted outline-none"
+          className="h-12 w-full bg-transparent text-sm text-wuko-heading placeholder:text-wuko-text-muted outline-none"
         />
       </div>
 
       <Command.List className="max-h-[60vh] min-h-[200px] overflow-y-auto p-2">
-        <Command.Empty className="px-6 py-12 text-center text-sm text-vex-text-muted">
+        <Command.Empty className="px-6 py-12 text-center text-sm text-wuko-text-muted">
           {status === "loading"
             ? "Searching…"
             : status === "unavailable"
@@ -201,13 +201,13 @@ function SearchPalette({ onClose }: { onClose: () => void }) {
                 key={row.key}
                 value={row.key}
                 onSelect={() => handleSelect(row.url)}
-                className="cursor-pointer rounded-md px-3 py-2 data-[selected=true]:bg-vex-accent/10"
+                className="cursor-pointer rounded-md px-3 py-2 data-[selected=true]:bg-wuko-accent/10"
               >
-                <div className="text-sm font-medium text-vex-heading">
+                <div className="text-sm font-medium text-wuko-heading">
                   {row.title}
                 </div>
                 {showDefaults && (
-                  <div className="mt-0.5 truncate text-[12px] text-vex-text-muted">
+                  <div className="mt-0.5 truncate text-[12px] text-wuko-text-muted">
                     {row.excerpt}
                   </div>
                 )}
@@ -223,12 +223,12 @@ function SearchPalette({ onClose }: { onClose: () => void }) {
                 key={row.key}
                 value={row.key}
                 onSelect={() => handleSelect(row.url)}
-                className="cursor-pointer rounded-md px-3 py-2 data-[selected=true]:bg-vex-accent/10"
+                className="cursor-pointer rounded-md px-3 py-2 data-[selected=true]:bg-wuko-accent/10"
               >
-                <div className="text-sm font-medium text-vex-heading">
+                <div className="text-sm font-medium text-wuko-heading">
                   {row.title}
                 </div>
-                <div className="mt-0.5 truncate text-[12px] text-vex-text-muted">
+                <div className="mt-0.5 truncate text-[12px] text-wuko-text-muted">
                   {row.excerpt}
                 </div>
               </Command.Item>
@@ -237,8 +237,8 @@ function SearchPalette({ onClose }: { onClose: () => void }) {
         )}
       </Command.List>
 
-      <div className="flex items-center justify-end gap-2 border-t border-vex-border px-4 py-2.5 text-[11px] text-vex-text-muted">
-        <kbd className="inline-flex h-5 min-w-5 items-center justify-center rounded border border-vex-border bg-vex-bg px-1 font-mono text-[10px]">
+      <div className="flex items-center justify-end gap-2 border-t border-wuko-border px-4 py-2.5 text-[11px] text-wuko-text-muted">
+        <kbd className="inline-flex h-5 min-w-5 items-center justify-center rounded border border-wuko-border bg-wuko-bg px-1 font-mono text-[10px]">
           ↵
         </kbd>
         <span>Go to Page</span>

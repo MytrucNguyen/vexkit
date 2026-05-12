@@ -13,20 +13,20 @@ export interface PropsTableProps {
 
 export function PropsTable({ rows }: PropsTableProps) {
   return (
-    <div className="overflow-x-auto rounded-lg border border-vex-border bg-vex-card/40">
+    <div className="overflow-x-auto rounded-lg border border-wuko-border bg-wuko-card/40">
       <table className="w-full text-left align-top text-[13.5px]">
-        <thead className="border-b border-vex-border/70 bg-vex-card/60">
+        <thead className="border-b border-wuko-border/70 bg-wuko-card/60">
           <tr>
-            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-vex-text-muted">
+            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-wuko-text-muted">
               Prop
             </th>
-            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-vex-text-muted">
+            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-wuko-text-muted">
               Type
             </th>
-            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-vex-text-muted">
+            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-wuko-text-muted">
               Default
             </th>
-            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-vex-text-muted">
+            <th className="px-3.5 py-2 text-[11px] font-medium uppercase tracking-wider text-wuko-text-muted">
               Description
             </th>
           </tr>
@@ -35,18 +35,18 @@ export function PropsTable({ rows }: PropsTableProps) {
           {rows.map((row) => (
             <tr
               key={row.name}
-              className="border-b border-vex-border/50 last:border-b-0"
+              className="border-b border-wuko-border/50 last:border-b-0"
             >
-              <td className="px-3.5 py-3 font-mono text-[12.5px] whitespace-nowrap text-vex-accent">
+              <td className="px-3.5 py-3 font-mono text-[12.5px] whitespace-nowrap text-wuko-accent">
                 {row.name}
               </td>
-              <td className="px-3.5 py-3 font-mono text-[12.5px] text-vex-text">
+              <td className="px-3.5 py-3 font-mono text-[12.5px] text-wuko-text">
                 {row.type}
               </td>
-              <td className="px-3.5 py-3 font-mono text-[12.5px] whitespace-nowrap text-vex-text-muted">
+              <td className="px-3.5 py-3 font-mono text-[12.5px] whitespace-nowrap text-wuko-text-muted">
                 {row.default}
               </td>
-              <td className="px-3.5 py-3 text-vex-text">{row.description}</td>
+              <td className="px-3.5 py-3 text-wuko-text">{row.description}</td>
             </tr>
           ))}
         </tbody>

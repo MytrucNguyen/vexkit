@@ -54,16 +54,16 @@ export function OnThisPage({
 
   return (
     <nav aria-label="On this page" className="text-[13px]">
-      <div className="mb-3 text-[11px] font-medium uppercase tracking-wider text-vex-text-muted">
+      <div className="mb-3 text-[11px] font-medium uppercase tracking-wider text-wuko-text-muted">
         On this page
       </div>
-      <ul className="space-y-1.5 border-l border-vex-border">
+      <ul className="space-y-1.5 border-l border-wuko-border">
         {items.map((it) => (
           <li key={it.id}>
             <a
               href={`#${it.id}`}
               data-active={activeId === it.id}
-              className={`toc-link block -ml-px border-l border-transparent text-vex-text-muted transition-colors hover:text-vex-heading ${
+              className={`toc-link block -ml-px border-l border-transparent text-wuko-text-muted transition-colors hover:text-wuko-heading ${
                 it.level === 3 ? "pl-6" : "pl-3"
               }`}
             >

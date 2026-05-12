@@ -55,9 +55,9 @@ export function CodeBlockShell({
   }
 
   return (
-    <div data-pagefind-ignore className="overflow-hidden rounded-lg border border-vex-border bg-vex-card/40">
-      <div className="flex min-h-9 items-center justify-between gap-3 border-b border-vex-border/70 bg-vex-card/60 px-3.5 py-2">
-        <div className="flex items-center gap-2 text-[11px] font-medium uppercase tracking-wider text-vex-text-muted">
+    <div data-pagefind-ignore className="overflow-hidden rounded-lg border border-wuko-border bg-wuko-card/40">
+      <div className="flex min-h-9 items-center justify-between gap-3 border-b border-wuko-border/70 bg-wuko-card/60 px-3.5 py-2">
+        <div className="flex items-center gap-2 text-[11px] font-medium uppercase tracking-wider text-wuko-text-muted">
           <Code2 aria-hidden="true" className="h-3.5 w-3.5" />
           <span>{label}</span>
         </div>
@@ -68,7 +68,7 @@ export function CodeBlockShell({
               onClick={() => setExpanded((v) => !v)}
               aria-expanded={expanded}
               aria-label={expanded ? "Collapse code" : "Expand code"}
-              className="inline-flex h-6 w-6 items-center justify-center rounded text-vex-text-muted transition-colors hover:bg-vex-border/40 hover:text-vex-heading focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent"
+              className="inline-flex h-6 w-6 items-center justify-center rounded text-wuko-text-muted transition-colors hover:bg-wuko-border/40 hover:text-wuko-heading focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent"
             >
               {expanded ? (
                 <ChevronUp aria-hidden="true" className="h-3.5 w-3.5" />
@@ -81,10 +81,10 @@ export function CodeBlockShell({
             type="button"
             onClick={handleCopy}
             aria-label={copied ? "Copied" : "Copy code"}
-            className="inline-flex h-6 w-6 items-center justify-center rounded text-vex-text-muted transition-colors hover:bg-vex-border/40 hover:text-vex-heading focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent"
+            className="inline-flex h-6 w-6 items-center justify-center rounded text-wuko-text-muted transition-colors hover:bg-wuko-border/40 hover:text-wuko-heading focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent"
           >
             {copied ? (
-              <Check aria-hidden="true" className="h-3.5 w-3.5 text-vex-accent" />
+              <Check aria-hidden="true" className="h-3.5 w-3.5 text-wuko-accent" />
             ) : (
               <Copy aria-hidden="true" className="h-3.5 w-3.5" />
             )}
@@ -106,7 +106,7 @@ export function CodeBlockShell({
         {!expanded && (
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-vex-card/60 to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-wuko-card/60 to-transparent"
           />
         )}
       </div>

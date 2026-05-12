@@ -15,23 +15,23 @@ import {
 } from "@/registry/default/ui/vex-tabs";
 
 const PANEL_CLASSES =
-  "flex min-h-[260px] flex-wrap items-center justify-center gap-3 rounded-lg border border-vex-border bg-vex-card/40 p-6 sm:p-10";
+  "flex min-h-[260px] flex-wrap items-center justify-center gap-3 rounded-lg border border-wuko-border bg-wuko-card/40 p-6 sm:p-10";
 
 export function PeekInsideKit() {
   return (
     <section className="mx-auto max-w-6xl px-8 pb-24">
       <div className="mb-5 flex items-end justify-between">
         <div>
-          <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-vex-accent">
+          <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-wuko-accent">
             Components
           </div>
-          <h2 className="text-2xl font-bold tracking-tight text-vex-heading lg:text-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-wuko-heading lg:text-3xl">
             A peek inside the kit.
           </h2>
         </div>
         <Link
           href="/docs/components"
-          className="vk-ring hidden items-center gap-1.5 rounded text-sm font-medium text-vex-accent transition-colors hover:underline underline-offset-4 sm:inline-flex"
+          className="vk-ring hidden items-center gap-1.5 rounded text-sm font-medium text-wuko-accent transition-colors hover:underline underline-offset-4 sm:inline-flex"
         >
           Browse all
           <ArrowRight size={14} aria-hidden />
@@ -102,16 +102,16 @@ export function PeekInsideKit() {
               <div className="mb-3 flex items-center gap-3">
                 <Avatar fallback="V" size="md" status="online" />
                 <div className="min-w-0 flex-1">
-                  <div className="text-sm font-semibold text-vex-heading">
+                  <div className="text-sm font-semibold text-wuko-heading">
                     Vex Kitsune
                   </div>
-                  <div className="text-[12px] text-vex-text-muted">
+                  <div className="text-[12px] text-wuko-text-muted">
                     Component librarian · 9 tails
                   </div>
                 </div>
                 <Badge variant="teal">Pro</Badge>
               </div>
-              <p className="text-[13px] leading-relaxed text-vex-text-muted">
+              <p className="text-[13px] leading-relaxed text-wuko-text-muted">
                 Curates a library of small, sharp tools so your team can ship
                 interfaces with intention.
               </p>
