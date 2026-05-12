@@ -2,6 +2,10 @@
 
 VexKit's public theming surface is a small set of CSS custom properties (`--vex-*`) on `:root`. Override any of them and every VexKit component picks up the new value: no rebuild, no JavaScript, no theme provider.
 
+## Palette origin
+
+VexKit's role tokens align with the Wuko mascot palette. The dark-mode `--vex-bg` (`#0f172a`) matches the mascot's navy outline, `--vex-accent` (`#5eead4`) matches its mint fur, and `--vex-gold` (`#d4a017`) matches its crown and glasses rim. Light-mode values are tuned for WCAG AA contrast on the inverted surface.
+
 ## Public role tokens
 
 These are the contract. Override them; everything else is internal.
