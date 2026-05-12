@@ -15,7 +15,7 @@ export const VexPlaceholder = React.forwardRef<
       ref={ref}
       role="status"
       className={
-        "inline-flex items-center gap-2 rounded-md border border-dashed border-vex-border bg-vex-card/40 px-3 py-2 text-sm text-vex-text-muted" +
+        "inline-flex items-center gap-2 rounded-md border border-dashed border-wuko-border bg-wuko-card/40 px-3 py-2 text-sm text-wuko-text-muted" +
         (className ? ` ${className}` : "")
       }
       {...props}

@@ -20,7 +20,7 @@ export const TabsList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.List
     ref={ref}
-    className={cn("flex border-b border-vex-border", className)}
+    className={cn("flex border-b border-wuko-border", className)}
     {...props}
   />
 ));
@@ -43,11 +43,11 @@ export const TabsTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       "relative px-4 py-2.5 text-sm font-medium transition-colors",
-      "text-vex-text-muted hover:text-vex-heading",
-      "data-[state=active]:text-vex-accent",
-      "after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-vex-accent",
+      "text-wuko-text-muted hover:text-wuko-heading",
+      "data-[state=active]:text-wuko-accent",
+      "after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-wuko-accent",
       "after:opacity-0 after:transition-opacity data-[state=active]:after:opacity-100",
-      "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent",
+      "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent",
       "disabled:cursor-not-allowed disabled:opacity-50",
       className
     )}
@@ -63,8 +63,8 @@ export const TabsContent = React.forwardRef<
   <TabsPrimitive.Content
     ref={ref}
     className={cn(
-      "pt-4 text-sm text-vex-text",
-      "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent",
+      "pt-4 text-sm text-wuko-text",
+      "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent",
       className
     )}
     {...props}

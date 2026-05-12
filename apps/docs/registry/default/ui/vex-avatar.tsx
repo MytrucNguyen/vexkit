@@ -38,9 +38,9 @@ const sizeClasses: Record<
 // "warning brown" rather than "user away". See the
 // status-indicator-fixed-hue-pin-to-dark-token-value rule.
 const statusColors: Record<AvatarStatus, string> = {
-  online: "bg-vex-success-fg",
+  online: "bg-wuko-success-fg",
   away: "bg-[#f59e0b]",
-  offline: "bg-vex-text-muted",
+  offline: "bg-wuko-text-muted",
 };
 
 export const Avatar = React.forwardRef<HTMLSpanElement, AvatarProps>(
@@ -55,7 +55,7 @@ export const Avatar = React.forwardRef<HTMLSpanElement, AvatarProps>(
         <span
           className={cn(
             "inline-flex items-center justify-center overflow-hidden rounded-full",
-            "bg-vex-border ring-2 ring-vex-bg",
+            "bg-wuko-border ring-2 ring-wuko-bg",
             sz.root
           )}
         >
@@ -66,7 +66,7 @@ export const Avatar = React.forwardRef<HTMLSpanElement, AvatarProps>(
           />
           <AvatarPrimitive.Fallback
             className={cn(
-              "inline-flex size-full items-center justify-center font-semibold text-vex-heading",
+              "inline-flex size-full items-center justify-center font-semibold text-wuko-heading",
               sz.fallback
             )}
           >
@@ -76,7 +76,7 @@ export const Avatar = React.forwardRef<HTMLSpanElement, AvatarProps>(
         {status && (
           <span
             className={cn(
-              "absolute bottom-0 right-0 rounded-full ring-2 ring-vex-bg",
+              "absolute bottom-0 right-0 rounded-full ring-2 ring-wuko-bg",
               sz.dot,
               statusColors[status]
             )}

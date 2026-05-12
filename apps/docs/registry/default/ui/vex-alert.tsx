@@ -31,30 +31,30 @@ interface VariantConfig {
 const variantConfig: Record<AlertVariant, VariantConfig> = {
   info: {
     Icon: Info,
-    color: "text-vex-accent",
-    tint: "bg-vex-accent/10",
-    border: "border-vex-accent/30",
+    color: "text-wuko-accent",
+    tint: "bg-wuko-accent/10",
+    border: "border-wuko-accent/30",
     role: "status",
   },
   success: {
     Icon: CheckCircle2,
-    color: "text-vex-success-fg",
-    tint: "bg-vex-success-fg/10",
-    border: "border-vex-success-fg/30",
+    color: "text-wuko-success-fg",
+    tint: "bg-wuko-success-fg/10",
+    border: "border-wuko-success-fg/30",
     role: "status",
   },
   warning: {
     Icon: AlertTriangle,
-    color: "text-vex-warning-fg",
-    tint: "bg-vex-warning-fg/10",
-    border: "border-vex-warning-fg/30",
+    color: "text-wuko-warning-fg",
+    tint: "bg-wuko-warning-fg/10",
+    border: "border-wuko-warning-fg/30",
     role: "alert",
   },
   danger: {
     Icon: AlertCircle,
-    color: "text-vex-danger-fg",
-    tint: "bg-vex-danger-fg/10",
-    border: "border-vex-danger-fg/30",
+    color: "text-wuko-danger-fg",
+    tint: "bg-wuko-danger-fg/10",
+    border: "border-wuko-danger-fg/30",
     role: "alert",
   },
 };
@@ -95,7 +95,7 @@ export const Alert = React.forwardRef<HTMLDivElement, AlertProps>(
               {title}
             </div>
           )}
-          <div className="text-[13px] leading-relaxed text-vex-text">
+          <div className="text-[13px] leading-relaxed text-wuko-text">
             {children}
           </div>
         </div>
@@ -106,7 +106,7 @@ export const Alert = React.forwardRef<HTMLDivElement, AlertProps>(
             onClick={onClose}
             className={cn(
               "shrink-0 self-start rounded opacity-60 transition-opacity hover:opacity-100",
-              "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent",
+              "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent",
               conf.color
             )}
           >

@@ -60,8 +60,8 @@ export const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
           disabled={disabled}
           className={cn(
             "relative shrink-0 rounded-full transition-colors",
-            "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent",
-            "data-[state=checked]:bg-vex-accent data-[state=unchecked]:bg-vex-border",
+            "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent",
+            "data-[state=checked]:bg-wuko-accent data-[state=unchecked]:bg-wuko-border",
             track
           )}
           {...rest}
@@ -74,7 +74,7 @@ export const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
             )}
           />
         </SwitchPrimitive.Root>
-        {label && <span className="text-sm text-vex-text">{label}</span>}
+        {label && <span className="text-sm text-wuko-text">{label}</span>}
       </label>
     );
   }

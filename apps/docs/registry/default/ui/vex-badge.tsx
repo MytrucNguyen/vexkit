@@ -15,15 +15,15 @@ export type BadgeVariant =
   | "outline";
 
 const variantClasses: Record<BadgeVariant, string> = {
-  default: "bg-vex-card text-vex-text border-vex-border",
-  teal: "bg-vex-accent/15 text-vex-accent border-vex-accent/30",
+  default: "bg-wuko-card text-wuko-text border-wuko-border",
+  teal: "bg-wuko-accent/15 text-wuko-accent border-wuko-accent/30",
   success:
-    "bg-vex-success-fg/15 text-vex-success-fg border-vex-success-fg/30",
+    "bg-wuko-success-fg/15 text-wuko-success-fg border-wuko-success-fg/30",
   warning:
-    "bg-vex-warning-fg/15 text-vex-warning-fg border-vex-warning-fg/30",
+    "bg-wuko-warning-fg/15 text-wuko-warning-fg border-wuko-warning-fg/30",
   danger:
-    "bg-vex-danger-fg/15 text-vex-danger-fg border-vex-danger-fg/30",
-  outline: "bg-transparent text-vex-text border-vex-border",
+    "bg-wuko-danger-fg/15 text-wuko-danger-fg border-wuko-danger-fg/30",
+  outline: "bg-transparent text-wuko-text border-wuko-border",
 };
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {

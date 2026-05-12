@@ -2,20 +2,20 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center font-semibold whitespace-nowrap select-none transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none",
+  "inline-flex items-center justify-center font-semibold whitespace-nowrap select-none transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none",
   {
     variants: {
       variant: {
         primary:
-          "bg-vex-accent text-vex-bg hover:bg-vex-accent-hover active:bg-vex-accent-active",
+          "bg-wuko-accent text-wuko-bg hover:bg-wuko-accent-hover active:bg-wuko-accent-active",
         secondary:
-          "bg-vex-card text-vex-heading border border-vex-border hover:bg-vex-border/40",
+          "bg-wuko-card text-wuko-heading border border-wuko-border hover:bg-wuko-border/40",
         outline:
-          "bg-transparent text-vex-heading border border-vex-border hover:bg-vex-card hover:border-vex-text-muted",
+          "bg-transparent text-wuko-heading border border-wuko-border hover:bg-wuko-card hover:border-wuko-text-muted",
         ghost:
-          "bg-transparent text-vex-text hover:bg-vex-card/60 hover:text-vex-heading",
+          "bg-transparent text-wuko-text hover:bg-wuko-card/60 hover:text-wuko-heading",
         danger:
-          "bg-vex-danger text-white hover:bg-vex-danger-hover",
+          "bg-wuko-danger text-white hover:bg-wuko-danger-hover",
       },
       size: {
         sm: "h-8 px-3 text-[13px] gap-1.5 rounded-md",

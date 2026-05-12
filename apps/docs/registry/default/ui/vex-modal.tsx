@@ -50,20 +50,20 @@ export const Modal: React.FC<ModalProps> = ({
           {...(description ? {} : { "aria-describedby": undefined })}
           className={cn(
             "fixed left-1/2 top-1/2 z-50 w-full max-w-md -translate-x-1/2 -translate-y-1/2",
-            "rounded-xl border border-vex-border bg-vex-card shadow-2xl",
+            "rounded-xl border border-wuko-border bg-wuko-card shadow-2xl",
             "focus:outline-none",
             className
           )}
         >
-          <div className="flex items-center justify-between border-b border-vex-border px-5 py-4">
-            <DialogPrimitive.Title className="text-base font-semibold text-vex-heading">
+          <div className="flex items-center justify-between border-b border-wuko-border px-5 py-4">
+            <DialogPrimitive.Title className="text-base font-semibold text-wuko-heading">
               {title}
             </DialogPrimitive.Title>
             <DialogPrimitive.Close
               aria-label="Close"
               className={cn(
-                "rounded text-vex-text-muted transition-colors hover:text-vex-heading",
-                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vex-accent"
+                "rounded text-wuko-text-muted transition-colors hover:text-wuko-heading",
+                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wuko-accent"
               )}
             >
               <svg
@@ -84,16 +84,16 @@ export const Modal: React.FC<ModalProps> = ({
           </div>
           <div className="px-5 py-4">
             {description && (
-              <DialogPrimitive.Description className="mb-3 text-sm text-vex-text">
+              <DialogPrimitive.Description className="mb-3 text-sm text-wuko-text">
                 {description}
               </DialogPrimitive.Description>
             )}
             {children && (
-              <div className="text-sm text-vex-text">{children}</div>
+              <div className="text-sm text-wuko-text">{children}</div>
             )}
           </div>
           {footer && (
-            <div className="flex justify-end gap-2 border-t border-vex-border px-5 py-3">
+            <div className="flex justify-end gap-2 border-t border-wuko-border px-5 py-3">
               {footer}
             </div>
           )}

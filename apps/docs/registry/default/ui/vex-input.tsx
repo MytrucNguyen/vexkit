@@ -3,12 +3,12 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 const inputVariants = cva(
   [
-    "w-full bg-vex-card text-vex-heading placeholder:text-vex-text-muted",
-    "border border-vex-border outline-none transition-colors",
-    "focus-visible:border-vex-accent focus-visible:ring-2 focus-visible:ring-vex-accent/30",
+    "w-full bg-wuko-card text-wuko-heading placeholder:text-wuko-text-muted",
+    "border border-wuko-border outline-none transition-colors",
+    "focus-visible:border-wuko-accent focus-visible:ring-2 focus-visible:ring-wuko-accent/30",
     "disabled:opacity-50 disabled:cursor-not-allowed",
-    "aria-invalid:border-vex-danger-fg",
-    "aria-invalid:focus-visible:border-vex-danger-fg aria-invalid:focus-visible:ring-vex-danger-fg/30",
+    "aria-invalid:border-wuko-danger-fg",
+    "aria-invalid:focus-visible:border-wuko-danger-fg aria-invalid:focus-visible:ring-wuko-danger-fg/30",
   ].join(" "),
   {
     variants: {
@@ -83,14 +83,14 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={inputId}
-            className="mb-1.5 block text-[13px] font-medium text-vex-heading"
+            className="mb-1.5 block text-[13px] font-medium text-wuko-heading"
           >
             {label}
           </label>
         )}
         <div className="relative">
           {leftIcon && (
-            <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-vex-text-muted">
+            <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-wuko-text-muted">
               {leftIcon}
             </span>
           )}
@@ -109,7 +109,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             {...props}
           />
           {rightIcon && (
-            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-vex-text-muted">
+            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-wuko-text-muted">
               {rightIcon}
             </span>
           )}
@@ -119,7 +119,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             id={messageId}
             className={cn(
               "mt-1.5 text-[12px]",
-              error ? "text-vex-danger-fg" : "text-vex-text-muted"
+              error ? "text-wuko-danger-fg" : "text-wuko-text-muted"
             )}
           >
             {error || hint}
