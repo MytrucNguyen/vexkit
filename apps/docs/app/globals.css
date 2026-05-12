@@ -24,6 +24,26 @@
   --vex-grid-line: rgba(51, 65, 85, 0.35);
   --vex-grid-glow: rgba(94, 234, 212, 0.18);
 
+  /* R2 transitional: Wuko tokens alongside legacy VexKit tokens.
+     R2.1a adds; R2.1b migrates consumers; R2.1c removes --vex-*. */
+  --wuko-bg: #0f172a;
+  --wuko-card: #1e293b;
+  --wuko-border: #334155;
+  --wuko-heading: #e2e8f0;
+  --wuko-text: #cbd5e1;
+  --wuko-text-muted: #94a3b8;
+  --wuko-accent: #5eead4;
+  --wuko-accent-hover: #2dd4bf;
+  --wuko-accent-active: #14b8a6;
+  --wuko-danger: #e11d48;
+  --wuko-danger-hover: #be123c;
+  --wuko-danger-fg: #fb7185;
+  --wuko-success-fg: #10b981;
+  --wuko-warning-fg: #f59e0b;
+  --wuko-gold: #d4a017;
+  --wuko-grid-line: rgba(51, 65, 85, 0.35);
+  --wuko-grid-glow: rgba(94, 234, 212, 0.18);
+
   color-scheme: dark;
 }
 
@@ -47,6 +67,25 @@
   --vex-grid-line: rgba(203, 213, 225, 0.6);
   --vex-grid-glow: rgba(20, 184, 166, 0.14);
 
+  /* R2 transitional Wuko aliases (see :root) */
+  --wuko-bg: #f8fafc;
+  --wuko-card: #ffffff;
+  --wuko-border: #e2e8f0;
+  --wuko-heading: #0f172a;
+  --wuko-text: #475569;
+  --wuko-text-muted: #64748b;
+  --wuko-accent: #0f766e;
+  --wuko-accent-hover: #0d9488;
+  --wuko-accent-active: #134e4a;
+  --wuko-danger: #dc2626;
+  --wuko-danger-hover: #b91c1c;
+  --wuko-danger-fg: #b91c1c;
+  --wuko-success-fg: #047857;
+  --wuko-warning-fg: #92400e;
+  --wuko-gold: #d4a017;
+  --wuko-grid-line: rgba(203, 213, 225, 0.6);
+  --wuko-grid-glow: rgba(20, 184, 166, 0.14);
+
   color-scheme: light;
 }
 
@@ -66,6 +105,23 @@
   --color-vex-success-fg: var(--vex-success-fg);
   --color-vex-warning-fg: var(--vex-warning-fg);
   --color-vex-gold: var(--vex-gold);
+
+  /* R2 transitional Wuko aliases (see :root) */
+  --color-wuko-bg: var(--wuko-bg);
+  --color-wuko-card: var(--wuko-card);
+  --color-wuko-border: var(--wuko-border);
+  --color-wuko-heading: var(--wuko-heading);
+  --color-wuko-text: var(--wuko-text);
+  --color-wuko-text-muted: var(--wuko-text-muted);
+  --color-wuko-accent: var(--wuko-accent);
+  --color-wuko-accent-hover: var(--wuko-accent-hover);
+  --color-wuko-accent-active: var(--wuko-accent-active);
+  --color-wuko-danger: var(--wuko-danger);
+  --color-wuko-danger-hover: var(--wuko-danger-hover);
+  --color-wuko-danger-fg: var(--wuko-danger-fg);
+  --color-wuko-success-fg: var(--wuko-success-fg);
+  --color-wuko-warning-fg: var(--wuko-warning-fg);
+  --color-wuko-gold: var(--wuko-gold);
 
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
