@@ -56,7 +56,7 @@ export const Controlled: Story = {
           <TabsContent value="second">Second tab body.</TabsContent>
           <TabsContent value="third">Third tab body.</TabsContent>
         </Tabs>
-        <div className="flex flex-wrap items-center gap-2 text-[13px] text-vex-text-muted">
+        <div className="flex flex-wrap items-center gap-2 text-[13px] text-wuko-text-muted">
           <span>External control:</span>
           <Button
             variant="outline"

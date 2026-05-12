@@ -76,7 +76,7 @@ export const Password: Story = {
           <button
             type="button"
             onClick={() => setShow((s) => !s)}
-            className="hover:text-vex-heading"
+            className="hover:text-wuko-heading"
             aria-label={show ? "Hide password" : "Show password"}
           >
             {show ? <EyeOff className="size-4" /> : <Eye className="size-4" />}

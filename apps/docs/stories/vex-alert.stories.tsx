@@ -62,7 +62,7 @@ export const Dismissible: Story = {
     const [open, setOpen] = useState(true);
     if (!open) {
       return (
-        <p className="text-[13px] text-vex-text-muted">Alert dismissed.</p>
+        <p className="text-[13px] text-wuko-text-muted">Alert dismissed.</p>
       );
     }
     return (
