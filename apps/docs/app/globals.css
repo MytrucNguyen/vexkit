@@ -108,12 +108,12 @@ body {
 }
 
 /* Keyboard focus ring: opt-in via class */
-.vk-ring:focus-visible {
+.wk-ring:focus-visible {
   outline: 2px solid var(--wuko-accent);
   outline-offset: 2px;
 }
 
-@keyframes vk-fade-in {
+@keyframes wk-fade-in {
   from {
     opacity: 0;
     transform: translateY(4px);
@@ -124,7 +124,7 @@ body {
   }
 }
 .page-fade {
-  animation: vk-fade-in 220ms ease-out;
+  animation: wk-fade-in 220ms ease-out;
 }
 
 /* Sidebar active link */
@@ -170,10 +170,10 @@ body {
 }
 
 /* Mobile sidebar backdrop */
-.vk-backdrop {
+.wk-backdrop {
   background: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(4px);
 }
-[data-theme="light"] .vk-backdrop {
+[data-theme="light"] .wk-backdrop {
   background: rgba(15, 23, 42, 0.4);
 }

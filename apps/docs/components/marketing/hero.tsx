@@ -38,7 +38,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/docs/installation"
-              className="vk-ring inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-wuko-accent px-5 text-[15px] font-semibold text-wuko-bg shadow-[inset_0_-2px_0_rgba(15,23,42,0.12)] transition-colors hover:bg-wuko-accent-hover active:bg-wuko-accent-active"
+              className="wk-ring inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-wuko-accent px-5 text-[15px] font-semibold text-wuko-bg shadow-[inset_0_-2px_0_rgba(15,23,42,0.12)] transition-colors hover:bg-wuko-accent-hover active:bg-wuko-accent-active"
             >
               Get Started
               <ArrowRight size={14} aria-hidden />
@@ -47,7 +47,7 @@ export function Hero() {
               href="https://github.com/MytrucNguyen/vexkit"
               target="_blank"
               rel="noopener noreferrer"
-              className="vk-ring inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-wuko-border bg-transparent px-5 text-[15px] font-medium text-wuko-heading transition-colors hover:border-wuko-text-muted hover:bg-wuko-card"
+              className="wk-ring inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-wuko-border bg-transparent px-5 text-[15px] font-medium text-wuko-heading transition-colors hover:border-wuko-text-muted hover:bg-wuko-card"
             >
               <GithubMark />
               GitHub

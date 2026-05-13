@@ -33,7 +33,7 @@ export function InstallChip() {
         type="button"
         onClick={onClick}
         aria-label={copied ? "Copied install command" : "Copy install command"}
-        className="vk-ring inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-wuko-text-muted transition-colors hover:bg-wuko-border/40 hover:text-wuko-heading"
+        className="wk-ring inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-wuko-text-muted transition-colors hover:bg-wuko-border/40 hover:text-wuko-heading"
       >
         {copied ? (
           <Check

@@ -12,7 +12,7 @@ export function MobileNavDrawer() {
         <div
           onClick={closeDrawer}
           aria-hidden
-          className="vk-backdrop fixed inset-0 z-40"
+          className="wk-backdrop fixed inset-0 z-40"
         />
       )}
       <aside

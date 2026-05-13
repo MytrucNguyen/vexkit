@@ -20,7 +20,7 @@ export function Header() {
           type="button"
           onClick={() => (open ? closeDrawer() : openDrawer())}
           aria-label={open ? "Close navigation" : "Open navigation"}
-          className="vk-ring text-wuko-text transition-colors hover:text-wuko-heading"
+          className="wk-ring text-wuko-text transition-colors hover:text-wuko-heading"
         >
           {open ? <X size={18} aria-hidden /> : <Menu size={18} aria-hidden />}
         </button>
@@ -28,7 +28,7 @@ export function Header() {
         <Link
           href="/"
           aria-label="VexKit home"
-          className="vk-ring inline-flex select-none items-center gap-2.5 rounded"
+          className="wk-ring inline-flex select-none items-center gap-2.5 rounded"
         >
           <Image
             src="/vex.png"
@@ -59,7 +59,7 @@ export function Header() {
           rel="noopener noreferrer"
           aria-label="GitHub"
           title="GitHub"
-          className="vk-ring hidden h-9 w-9 items-center justify-center rounded-md border border-wuko-border bg-wuko-card/60 text-wuko-text transition-colors hover:text-wuko-heading sm:inline-flex"
+          className="wk-ring hidden h-9 w-9 items-center justify-center rounded-md border border-wuko-border bg-wuko-card/60 text-wuko-text transition-colors hover:text-wuko-heading sm:inline-flex"
         >
           <GithubMark size={16} />
         </a>
