@@ -6,7 +6,7 @@ import { create } from "storybook/theming";
 
 import "../app/globals.css";
 
-const vexkitDark = create({
+const wukoDark = create({
   base: "dark",
   appBg: "#0f172a",
   appContentBg: "#1e293b",
@@ -25,7 +25,7 @@ const vexkitDark = create({
   inputTextColor: "#e2e8f0",
 });
 
-const vexkitLight = create({
+const wukoLight = create({
   base: "light",
   appBg: "#f8fafc",
   appContentBg: "#ffffff",
@@ -59,7 +59,7 @@ const preview: Preview = {
         const mode = (storyContext.globals.theme as string) ?? "dark";
         return React.createElement(
           DocsContainer,
-          { context, theme: mode === "light" ? vexkitLight : vexkitDark },
+          { context, theme: mode === "light" ? wukoLight : wukoDark },
           children,
         );
       },

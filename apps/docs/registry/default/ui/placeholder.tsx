@@ -1,14 +1,14 @@
 import * as React from "react";
 
 // Phase 3 plumbing test, replaced by real primitives from Phase 5 onward.
-export interface VexPlaceholderProps
+export interface PlaceholderProps
   extends React.HTMLAttributes<HTMLDivElement> {
   label?: string;
 }
 
-export const VexPlaceholder = React.forwardRef<
+export const Placeholder = React.forwardRef<
   HTMLDivElement,
-  VexPlaceholderProps
+  PlaceholderProps
 >(({ label = "VexKit placeholder", className, ...props }, ref) => {
   return (
     <div
@@ -25,4 +25,4 @@ export const VexPlaceholder = React.forwardRef<
     </div>
   );
 });
-VexPlaceholder.displayName = "VexPlaceholder";
+Placeholder.displayName = "Placeholder";

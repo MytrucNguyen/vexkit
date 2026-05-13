@@ -24,7 +24,7 @@ export interface TooltipProps
 // Per-tooltip Provider: each Tooltip wrapper renders its own Provider so
 // consumers don't need an app-root wrapper. Trade-off: ~50ms first-hover init
 // cost per tooltip and no global delay coordination across multiple tooltips.
-// Acceptable for v0.1.0; future major versions may expose <VexTooltipProvider>
+// Acceptable for v0.1.0; future major versions may expose <TooltipProvider>
 // for global coordination if it becomes a real consumer need.
 export function Tooltip({
   content,
