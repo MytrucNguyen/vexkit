@@ -72,18 +72,18 @@ export default function BadgePage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-badge" />
+      <InstallationTabs name="badge" />
 
       <H2 id="variants">Variants</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         Each tinted variant maps to a single role token: <code>teal</code> →{" "}
-        <code>--vex-accent</code>, <code>success</code> →{" "}
-        <code>--vex-success-fg</code>, <code>warning</code> →{" "}
-        <code>--vex-warning-fg</code>, <code>danger</code> →{" "}
-        <code>--vex-danger-fg</code>. Override the token to retheme the
+        <code>--wuko-accent</code>, <code>success</code> →{" "}
+        <code>--wuko-success-fg</code>, <code>warning</code> →{" "}
+        <code>--wuko-warning-fg</code>, <code>danger</code> →{" "}
+        <code>--wuko-danger-fg</code>. Override the token to retheme the
         variant. Default and outline use neutral surface tokens (
-        <code>--vex-card</code>, <code>--vex-text</code>,{" "}
-        <code>--vex-border</code>), so they remain visually stable when
+        <code>--wuko-card</code>, <code>--wuko-text</code>,{" "}
+        <code>--wuko-border</code>), so they remain visually stable when
         consumers customize accent palettes.
       </p>
       <ExampleSurface>

@@ -30,7 +30,7 @@ export const Default: Story = {
           open={open}
           onClose={() => setOpen(false)}
           title="Delete project?"
-          description="This will permanently delete vex-app and all of its data. This action cannot be undone."
+          description="This will permanently delete wuko-app and all of its data. This action cannot be undone."
           footer={
             <>
               <Button variant="ghost" onClick={() => setOpen(false)}>
@@ -60,7 +60,7 @@ export const WithoutDescription: Story = {
           title="Deployment complete"
           footer={<Button onClick={() => setOpen(false)}>Got it</Button>}
         >
-          Your changes are live at vex-app.example.com.
+          Your changes are live at wuko-app.example.com.
         </Modal>
       </>
     );

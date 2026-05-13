@@ -9,7 +9,7 @@ export const metadata = {
   title: "Card | VexKit",
 };
 
-const USAGE_SAMPLE = `import { Card } from "@/components/ui/vex-card";
+const USAGE_SAMPLE = `import { Card } from "@/components/ui/card";
 
 export function Example() {
   return (
@@ -70,7 +70,7 @@ export default function CardPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-card" />
+      <InstallationTabs name="card" />
 
       <H2 id="usage">Usage</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">

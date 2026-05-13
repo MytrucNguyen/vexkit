@@ -12,8 +12,8 @@ export const metadata = {
 
 const USAGE_SAMPLE = `import { Bell, Trash2, Zap } from "lucide-react";
 
-import { Button } from "@/components/ui/vex-button";
-import { Tooltip } from "@/components/ui/vex-tooltip";
+import { Button } from "@/components/ui/button";
+import { Tooltip } from "@/components/ui/tooltip";
 
 export function ButtonRow() {
   return (
@@ -120,7 +120,7 @@ export default function TooltipPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-tooltip" />
+      <InstallationTabs name="tooltip" />
 
       <H2 id="usage">Usage</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">

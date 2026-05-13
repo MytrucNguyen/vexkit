@@ -10,7 +10,7 @@ export const metadata = {
   title: "Avatar | VexKit",
 };
 
-const SIZES_SAMPLE = `import { Avatar } from "@/components/ui/vex-avatar";
+const SIZES_SAMPLE = `import { Avatar } from "@/components/ui/avatar";
 
 export function ProfileRow() {
   return (
@@ -27,7 +27,7 @@ export function ProfileRow() {
   );
 }`;
 
-const STATUS_SAMPLE = `import { Avatar } from "@/components/ui/vex-avatar";
+const STATUS_SAMPLE = `import { Avatar } from "@/components/ui/avatar";
 
 export function PresenceList() {
   return (
@@ -118,7 +118,7 @@ export default function AvatarPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-avatar" />
+      <InstallationTabs name="avatar" />
 
       <H2 id="sizes">Sizes</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">

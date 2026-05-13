@@ -8,7 +8,7 @@ export function ThemeToggle() {
       document.documentElement.dataset.theme === "light" ? "dark" : "light";
     document.documentElement.dataset.theme = next;
     try {
-      localStorage.setItem("vex-theme", next);
+      localStorage.setItem("wuko-theme", next);
     } catch {}
   };
 

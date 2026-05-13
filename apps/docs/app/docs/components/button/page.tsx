@@ -11,7 +11,7 @@ export const metadata = {
   title: "Button | VexKit",
 };
 
-const USAGE_SAMPLE = `import { Button } from "@/components/ui/vex-button";
+const USAGE_SAMPLE = `import { Button } from "@/components/ui/button";
 
 export function Example() {
   return <Button variant="primary">Deploy</Button>;
@@ -120,7 +120,7 @@ export default function ButtonPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-button" />
+      <InstallationTabs name="button" />
 
       <H2 id="usage">Usage</H2>
       <ExampleSurface>
@@ -233,7 +233,7 @@ export default function ButtonPage() {
         </li>
         <li>
           Focus is announced visually with a 2px outline in{" "}
-          <code>--vex-accent</code> at a 2px offset, visible against any
+          <code>--wuko-accent</code> at a 2px offset, visible against any
           background.
         </li>
         <li>

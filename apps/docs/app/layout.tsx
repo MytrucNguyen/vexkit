@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Accessible, composable, themeable React components distributed as a shadcn-compatible registry.",
 };
 
-const themeScript = `(function(){try{var t=localStorage.getItem('vex-theme');document.documentElement.dataset.theme=t==='light'?'light':'dark'}catch(e){document.documentElement.dataset.theme='dark'}})();`;
+const themeScript = `(function(){try{var t=localStorage.getItem('wuko-theme');document.documentElement.dataset.theme=t==='light'?'light':'dark'}catch(e){document.documentElement.dataset.theme='dark'}})();`;
 
 export default function RootLayout({
   children,

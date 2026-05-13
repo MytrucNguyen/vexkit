@@ -63,7 +63,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
     ref
   ) => {
     const reactId = React.useId();
-    const inputId = id ?? `vex-input-${reactId}`;
+    const inputId = id ?? `wuko-input-${reactId}`;
     const messageId = hint || error ? `${inputId}-msg` : undefined;
     const describedBy = cn(ariaDescribedBy, messageId) || undefined;
 

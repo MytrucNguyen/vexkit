@@ -19,7 +19,7 @@ const USAGE_SAMPLE = `import {
   TabsList,
   TabsTrigger,
   TabsContent,
-} from "@/components/ui/vex-tabs";
+} from "@/components/ui/tabs";
 
 // Anatomy:
 //   Tabs (Root, state container)
@@ -54,7 +54,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/components/ui/vex-tabs";
+} from "@/components/ui/tabs";
 
 export function ControlledTabs() {
   const [tab, setTab] = useState("first");
@@ -79,7 +79,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/components/ui/vex-tabs";
+} from "@/components/ui/tabs";
 
 // Pass asChild to substitute your own element as the trigger — Radix
 // applies the trigger's props (role, data-state, ref) to your child.
@@ -192,7 +192,7 @@ export default function TabsPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-tabs" />
+      <InstallationTabs name="tabs" />
 
       <H2 id="usage">Usage</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">

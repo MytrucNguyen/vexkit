@@ -33,7 +33,7 @@ const sizeClasses: Record<
   lg: { root: "size-14", fallback: "text-base", dot: "size-3" },
 };
 
-// Away dot pinned to dark-mode #f59e0b (vex-warning-fg dark value) so it stays
+// Away dot pinned to dark-mode #f59e0b (wuko-warning-fg dark value) so it stays
 // vibrant in both themes; role-token's light-mode amber-800 ramp reads as
 // "warning brown" rather than "user away". See the
 // status-indicator-fixed-hue-pin-to-dark-token-value rule.

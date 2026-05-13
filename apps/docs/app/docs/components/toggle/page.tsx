@@ -14,7 +14,7 @@ const USAGE_SAMPLE = `"use client";
 
 import { useState } from "react";
 
-import { Toggle } from "@/components/ui/vex-toggle";
+import { Toggle } from "@/components/ui/toggle";
 
 export function NotificationSettings() {
   const [notifications, setNotifications] = useState(true);
@@ -126,7 +126,7 @@ export default function TogglePage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-toggle" />
+      <InstallationTabs name="toggle" />
 
       <H2 id="usage">Usage</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">

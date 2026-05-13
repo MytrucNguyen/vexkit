@@ -13,63 +13,63 @@ const TOKENS_SNIPPET = `@import "tailwindcss";
 @custom-variant light (&:where([data-theme="light"] *));
 
 :root {
-  --vex-bg: #0f172a;
-  --vex-card: #1e293b;
-  --vex-border: #334155;
-  --vex-heading: #e2e8f0;
-  --vex-text: #cbd5e1;
-  --vex-text-muted: #94a3b8;
-  --vex-accent: #5eead4;
-  --vex-accent-hover: #2dd4bf;
-  --vex-accent-active: #14b8a6;
-  --vex-danger: #e11d48;
-  --vex-danger-hover: #be123c;
-  --vex-danger-fg: #fb7185;
-  --vex-success-fg: #10b981;
-  --vex-warning-fg: #f59e0b;
-  --vex-gold: #d4a017;
+  --wuko-bg: #0f172a;
+  --wuko-card: #1e293b;
+  --wuko-border: #334155;
+  --wuko-heading: #e2e8f0;
+  --wuko-text: #cbd5e1;
+  --wuko-text-muted: #94a3b8;
+  --wuko-accent: #5eead4;
+  --wuko-accent-hover: #2dd4bf;
+  --wuko-accent-active: #14b8a6;
+  --wuko-danger: #e11d48;
+  --wuko-danger-hover: #be123c;
+  --wuko-danger-fg: #fb7185;
+  --wuko-success-fg: #10b981;
+  --wuko-warning-fg: #f59e0b;
+  --wuko-gold: #d4a017;
   color-scheme: dark;
 }
 
 [data-theme="light"] {
-  --vex-bg: #f8fafc;
-  --vex-card: #ffffff;
-  --vex-border: #e2e8f0;
-  --vex-heading: #0f172a;
-  --vex-text: #475569;
-  --vex-text-muted: #64748b;
-  --vex-accent: #0f766e;
-  --vex-accent-hover: #0d9488;
-  --vex-accent-active: #134e4a;
-  --vex-danger: #dc2626;
-  --vex-danger-hover: #b91c1c;
-  --vex-danger-fg: #b91c1c;
-  --vex-success-fg: #047857;
-  --vex-warning-fg: #92400e;
-  --vex-gold: #d4a017;
+  --wuko-bg: #f8fafc;
+  --wuko-card: #ffffff;
+  --wuko-border: #e2e8f0;
+  --wuko-heading: #0f172a;
+  --wuko-text: #475569;
+  --wuko-text-muted: #64748b;
+  --wuko-accent: #0f766e;
+  --wuko-accent-hover: #0d9488;
+  --wuko-accent-active: #134e4a;
+  --wuko-danger: #dc2626;
+  --wuko-danger-hover: #b91c1c;
+  --wuko-danger-fg: #b91c1c;
+  --wuko-success-fg: #047857;
+  --wuko-warning-fg: #92400e;
+  --wuko-gold: #d4a017;
   color-scheme: light;
 }
 
 @theme inline {
-  --color-vex-bg: var(--vex-bg);
-  --color-vex-card: var(--vex-card);
-  --color-vex-border: var(--vex-border);
-  --color-vex-heading: var(--vex-heading);
-  --color-vex-text: var(--vex-text);
-  --color-vex-text-muted: var(--vex-text-muted);
-  --color-vex-accent: var(--vex-accent);
-  --color-vex-accent-hover: var(--vex-accent-hover);
-  --color-vex-accent-active: var(--vex-accent-active);
-  --color-vex-danger: var(--vex-danger);
-  --color-vex-danger-hover: var(--vex-danger-hover);
-  --color-vex-danger-fg: var(--vex-danger-fg);
-  --color-vex-success-fg: var(--vex-success-fg);
-  --color-vex-warning-fg: var(--vex-warning-fg);
-  --color-vex-gold: var(--vex-gold);
+  --color-wuko-bg: var(--wuko-bg);
+  --color-wuko-card: var(--wuko-card);
+  --color-wuko-border: var(--wuko-border);
+  --color-wuko-heading: var(--wuko-heading);
+  --color-wuko-text: var(--wuko-text);
+  --color-wuko-text-muted: var(--wuko-text-muted);
+  --color-wuko-accent: var(--wuko-accent);
+  --color-wuko-accent-hover: var(--wuko-accent-hover);
+  --color-wuko-accent-active: var(--wuko-accent-active);
+  --color-wuko-danger: var(--wuko-danger);
+  --color-wuko-danger-hover: var(--wuko-danger-hover);
+  --color-wuko-danger-fg: var(--wuko-danger-fg);
+  --color-wuko-success-fg: var(--wuko-success-fg);
+  --color-wuko-warning-fg: var(--wuko-warning-fg);
+  --color-wuko-gold: var(--wuko-gold);
 }`;
 
 export default function InstallationPage() {
-  const installCommand = `npx shadcn@latest add ${getRegistryItemUrl("vex-placeholder")}`;
+  const installCommand = `npx shadcn@latest add ${getRegistryItemUrl("placeholder")}`;
 
   return (
     <>
@@ -107,7 +107,7 @@ export default function InstallationPage() {
         Paste the block below into your <code>app/globals.css</code> (or
         wherever you import Tailwind). It defines VexKit&apos;s public role
         tokens for both dark and light modes, and wires them as Tailwind v4
-        utility classes (<code>bg-vex-card</code>, <code>text-vex-text</code>,{" "}
+        utility classes (<code>bg-wuko-card</code>, <code>text-wuko-text</code>,{" "}
         and so on).
       </p>
       <CodeBlock
@@ -134,7 +134,7 @@ export default function InstallationPage() {
 
       <H2 id="verify-theming">4. Verify theming</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
-        The component lands at <code>components/ui/vex-placeholder.tsx</code>{" "}
+        The component lands at <code>components/ui/placeholder.tsx</code>{" "}
         (per your <code>components.json</code> aliases). To verify the role
         tokens flip correctly, set{" "}
         <code>{'<html data-theme="light">'}</code> in your dev tools or your

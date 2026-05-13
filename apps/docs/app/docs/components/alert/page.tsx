@@ -11,7 +11,7 @@ export const metadata = {
   title: "Alert | VexKit",
 };
 
-const VARIANTS_SAMPLE = `import { Alert } from "@/components/ui/vex-alert";
+const VARIANTS_SAMPLE = `import { Alert } from "@/components/ui/alert";
 
 export function AlertVariants() {
   return (
@@ -35,7 +35,7 @@ const CLOSE_SAMPLE = `"use client";
 
 import { useState } from "react";
 
-import { Alert } from "@/components/ui/vex-alert";
+import { Alert } from "@/components/ui/alert";
 
 export function DismissibleAlert() {
   const [open, setOpen] = useState(true);
@@ -120,7 +120,7 @@ export default function AlertPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-alert" />
+      <InstallationTabs name="alert" />
 
       <H2 id="variants">Variants</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">

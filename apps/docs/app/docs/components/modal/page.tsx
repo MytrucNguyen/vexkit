@@ -14,8 +14,8 @@ const USAGE_SAMPLE = `"use client";
 
 import { useState } from "react";
 
-import { Button } from "@/components/ui/vex-button";
-import { Modal } from "@/components/ui/vex-modal";
+import { Button } from "@/components/ui/button";
+import { Modal } from "@/components/ui/modal";
 
 export function DeleteProjectDialog() {
   const [open, setOpen] = useState(false);
@@ -26,7 +26,7 @@ export function DeleteProjectDialog() {
         open={open}
         onClose={() => setOpen(false)}
         title="Delete project?"
-        description="This will permanently delete vex-app and all of its data. This action cannot be undone."
+        description="This will permanently delete wuko-app and all of its data. This action cannot be undone."
         footer={
           <>
             <Button variant="ghost" onClick={() => setOpen(false)}>
@@ -121,7 +121,7 @@ export default function ModalPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-modal" />
+      <InstallationTabs name="modal" />
 
       <H2 id="usage">Usage</H2>
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">

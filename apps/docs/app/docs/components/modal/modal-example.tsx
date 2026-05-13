@@ -14,7 +14,7 @@ export function ModalExample() {
         open={open}
         onClose={() => setOpen(false)}
         title="Delete project?"
-        description="This will permanently delete vex-app and all of its data. This action cannot be undone."
+        description="This will permanently delete wuko-app and all of its data. This action cannot be undone."
         footer={
           <>
             <Button variant="ghost" onClick={() => setOpen(false)}>

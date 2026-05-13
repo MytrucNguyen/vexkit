@@ -13,7 +13,7 @@ export const metadata = {
   title: "Input | VexKit",
 };
 
-const USAGE_SAMPLE = `import { Input } from "@/components/ui/vex-input";
+const USAGE_SAMPLE = `import { Input } from "@/components/ui/input";
 
 export function Example() {
   return <Input label="Email" placeholder="you@example.com" />;
@@ -46,7 +46,7 @@ const PASSWORD_SAMPLE = `"use client";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 
-import { Input } from "@/components/ui/vex-input";
+import { Input } from "@/components/ui/input";
 
 export function PasswordField() {
   const [show, setShow] = useState(false);
@@ -164,7 +164,7 @@ export default function InputPage() {
       </header>
 
       <H2 id="installation">Installation</H2>
-      <InstallationTabs name="vex-input" />
+      <InstallationTabs name="input" />
 
       <H2 id="usage">Usage</H2>
       <ExampleSurface>
@@ -217,7 +217,7 @@ export default function InputPage() {
       <p className="mb-4 text-[14px] leading-relaxed text-wuko-text">
         <code>hint</code> renders supportive text below the field.{" "}
         <code>error</code> replaces it with an error message, swaps the border
-        to <code>--vex-danger-fg</code>, and sets{" "}
+        to <code>--wuko-danger-fg</code>, and sets{" "}
         <code>aria-invalid=&quot;true&quot;</code>. Visual and screen-reader
         signals are coupled. The styling is driven from the ARIA attribute, so
         you cannot show the error state without also announcing it.
@@ -290,8 +290,8 @@ export default function InputPage() {
         </li>
         <li>
           Focus uses{" "}
-          <code>focus-visible:border-vex-accent</code> plus a soft{" "}
-          <code>focus-visible:ring-vex-accent/30</code> ring inside the visual
+          <code>focus-visible:border-wuko-accent</code> plus a soft{" "}
+          <code>focus-visible:ring-wuko-accent/30</code> ring inside the visual
           frame, different convention from Button&apos;s external{" "}
           <code>focus-visible:outline</code>, because input fields conventionally
           show focus on the editable surface itself.
