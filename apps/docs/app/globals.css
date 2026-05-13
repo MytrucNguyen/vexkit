@@ -4,28 +4,6 @@
 
 :root {
   /* Public role tokens. See THEMING.md */
-  --vex-bg: #0f172a;
-  --vex-card: #1e293b;
-  --vex-border: #334155;
-  --vex-heading: #e2e8f0;
-  --vex-text: #cbd5e1;
-  --vex-text-muted: #94a3b8;
-  --vex-accent: #5eead4;
-  --vex-accent-hover: #2dd4bf;
-  --vex-accent-active: #14b8a6;
-  --vex-danger: #e11d48;
-  --vex-danger-hover: #be123c;
-  --vex-danger-fg: #fb7185;
-  --vex-success-fg: #10b981;
-  --vex-warning-fg: #f59e0b;
-  --vex-gold: #d4a017;
-
-  /* Decorative tokens (overridable, used by .grid-bg) */
-  --vex-grid-line: rgba(51, 65, 85, 0.35);
-  --vex-grid-glow: rgba(94, 234, 212, 0.18);
-
-  /* R2 transitional: Wuko tokens alongside legacy VexKit tokens.
-     R2.1a adds; R2.1b migrates consumers; R2.1c removes --vex-*. */
   --wuko-bg: #0f172a;
   --wuko-card: #1e293b;
   --wuko-border: #334155;
@@ -48,26 +26,6 @@
 }
 
 [data-theme="light"] {
-  --vex-bg: #f8fafc;
-  --vex-card: #ffffff;
-  --vex-border: #e2e8f0;
-  --vex-heading: #0f172a;
-  --vex-text: #475569;
-  --vex-text-muted: #64748b;
-  --vex-accent: #0f766e;
-  --vex-accent-hover: #0d9488;
-  --vex-accent-active: #134e4a;
-  --vex-danger: #dc2626;
-  --vex-danger-hover: #b91c1c;
-  --vex-danger-fg: #b91c1c;
-  --vex-success-fg: #047857;
-  --vex-warning-fg: #92400e;
-  --vex-gold: #d4a017;
-
-  --vex-grid-line: rgba(203, 213, 225, 0.6);
-  --vex-grid-glow: rgba(20, 184, 166, 0.14);
-
-  /* R2 transitional Wuko aliases (see :root) */
   --wuko-bg: #f8fafc;
   --wuko-card: #ffffff;
   --wuko-border: #e2e8f0;
@@ -90,23 +48,6 @@
 }
 
 @theme inline {
-  --color-vex-bg: var(--vex-bg);
-  --color-vex-card: var(--vex-card);
-  --color-vex-border: var(--vex-border);
-  --color-vex-heading: var(--vex-heading);
-  --color-vex-text: var(--vex-text);
-  --color-vex-text-muted: var(--vex-text-muted);
-  --color-vex-accent: var(--vex-accent);
-  --color-vex-accent-hover: var(--vex-accent-hover);
-  --color-vex-accent-active: var(--vex-accent-active);
-  --color-vex-danger: var(--vex-danger);
-  --color-vex-danger-hover: var(--vex-danger-hover);
-  --color-vex-danger-fg: var(--vex-danger-fg);
-  --color-vex-success-fg: var(--vex-success-fg);
-  --color-vex-warning-fg: var(--vex-warning-fg);
-  --color-vex-gold: var(--vex-gold);
-
-  /* R2 transitional Wuko aliases (see :root) */
   --color-wuko-bg: var(--wuko-bg);
   --color-wuko-card: var(--wuko-card);
   --color-wuko-border: var(--wuko-border);
@@ -133,8 +74,8 @@ html {
 
 html,
 body {
-  background: var(--vex-bg);
-  color: var(--vex-heading);
+  background: var(--wuko-bg);
+  color: var(--wuko-heading);
   min-height: 100%;
 }
 
@@ -146,29 +87,29 @@ body {
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: var(--vex-card);
+  background: var(--wuko-card);
   border: 2px solid transparent;
   border-radius: 8px;
   background-clip: padding-box;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background: var(--vex-border);
+  background: var(--wuko-border);
   background-clip: padding-box;
 }
 
 /* Hero backdrop: radial accent glow + 1px line grid */
 .grid-bg {
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -10%, var(--vex-grid-glow), transparent 60%),
-    linear-gradient(to right, var(--vex-grid-line) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--vex-grid-line) 1px, transparent 1px);
+    radial-gradient(ellipse 80% 50% at 50% -10%, var(--wuko-grid-glow), transparent 60%),
+    linear-gradient(to right, var(--wuko-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--wuko-grid-line) 1px, transparent 1px);
   background-size: auto, 56px 56px, 56px 56px;
   background-position: center top, center, center;
 }
 
 /* Keyboard focus ring: opt-in via class */
 .vk-ring:focus-visible {
-  outline: 2px solid var(--vex-accent);
+  outline: 2px solid var(--wuko-accent);
   outline-offset: 2px;
 }
 
@@ -188,25 +129,25 @@ body {
 
 /* Sidebar active link */
 .nav-link[data-active="true"] {
-  color: var(--vex-accent);
-  background: color-mix(in srgb, var(--vex-accent) 10%, transparent);
+  color: var(--wuko-accent);
+  background: color-mix(in srgb, var(--wuko-accent) 10%, transparent);
 }
 
 /* On-this-page active link */
 .toc-link[data-active="true"] {
-  color: var(--vex-accent);
-  border-left-color: var(--vex-accent);
+  color: var(--wuko-accent);
+  border-left-color: var(--wuko-accent);
 }
 
 /* Inline code in prose (excludes code inside <pre>) */
 :not(pre) > code {
   font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.875em;
-  background: color-mix(in srgb, var(--vex-card) 70%, transparent);
-  border: 1px solid var(--vex-border);
+  background: color-mix(in srgb, var(--wuko-card) 70%, transparent);
+  border: 1px solid var(--wuko-border);
   border-radius: 4px;
   padding: 0.1em 0.35em;
-  color: var(--vex-heading);
+  color: var(--wuko-heading);
 }
 
 /* Shiki dual-theme: defaultColor:false emits --shiki-light/--shiki-dark on each span,
