@@ -1,7 +1,7 @@
 import type { RegistrySource } from "./types";
 
 export const REGISTRY_AUTHOR =
-  "Wuko (https://github.com/MytrucNguyen/vexkit)";
+  "Wuko (https://github.com/MytrucNguyen/wuko)";
 
 export const REGISTRY_NAME = "wuko";
 

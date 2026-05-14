@@ -44,7 +44,7 @@ export function Hero() {
               <ArrowRight size={14} aria-hidden />
             </Link>
             <a
-              href="https://github.com/MytrucNguyen/vexkit"
+              href="https://github.com/MytrucNguyen/wuko"
               target="_blank"
               rel="noopener noreferrer"
               className="wk-ring inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-wuko-border bg-transparent px-5 text-[15px] font-medium text-wuko-heading transition-colors hover:border-wuko-text-muted hover:bg-wuko-card"

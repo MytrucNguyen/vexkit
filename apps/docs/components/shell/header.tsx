@@ -54,7 +54,7 @@ export function Header() {
         <MobileSearchTrigger />
 
         <a
-          href="https://github.com/MytrucNguyen/vexkit"
+          href="https://github.com/MytrucNguyen/wuko"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
