@@ -47,14 +47,14 @@ export const WithImage: Story = {
     <Card className="max-w-sm overflow-hidden p-0">
       <Image
         src="/brand/wuko.png"
-        alt="Vex, the Wuko mascot"
+        alt="Wuko Kitsune"
         width={384}
         height={160}
         className="h-40 w-full object-cover"
       />
       <div className="p-5">
         <div className="mb-1 text-sm font-semibold text-wuko-heading">
-          Meet Vex
+          Meet Wuko
         </div>
         <p className="text-[13px] text-wuko-text-muted">
           The nine-tailed kitsune behind every Wuko primitive.

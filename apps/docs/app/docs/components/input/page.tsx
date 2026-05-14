@@ -34,7 +34,7 @@ const ICONS_SAMPLE = `import { Mail, Search } from "lucide-react";
   placeholder="Search docs..."
 />`;
 
-const HINTS_SAMPLE = `<Input label="Username" defaultValue="vex" hint="Must be 3–20 characters." />
+const HINTS_SAMPLE = `<Input label="Username" defaultValue="wuko" hint="Must be 3–20 characters." />
 <Input
   label="Email"
   defaultValue="not-an-email"
@@ -69,7 +69,7 @@ export function PasswordField() {
   );
 }`;
 
-const DISABLED_SAMPLE = `<Input label="Read-only" disabled defaultValue="vex@wuko.dev" />`;
+const DISABLED_SAMPLE = `<Input label="Read-only" disabled defaultValue="wuko@wuko.dev" />`;
 
 const PROPS_ROWS = [
   {
@@ -226,7 +226,7 @@ export default function InputPage() {
         <div className="max-w-sm space-y-4">
           <Input
             label="Username"
-            defaultValue="vex"
+            defaultValue="wuko"
             hint="Must be 3–20 characters."
           />
           <Input
@@ -258,7 +258,7 @@ export default function InputPage() {
       <H2 id="disabled">Disabled</H2>
       <ExampleSurface>
         <div className="max-w-sm">
-          <Input label="Read-only" disabled defaultValue="vex@wuko.dev" />
+          <Input label="Read-only" disabled defaultValue="wuko@wuko.dev" />
         </div>
       </ExampleSurface>
       <CodeBlock lang="tsx" code={DISABLED_SAMPLE} />

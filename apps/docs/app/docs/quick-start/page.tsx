@@ -18,13 +18,13 @@ export function ProfileCard() {
       <div className="flex items-center gap-3">
         <Avatar fallback="V" status="online" />
         <div>
-          <div className="font-semibold">Vex Kitsune</div>
-          <div className="text-sm opacity-60">vex@wuko.dev</div>
+          <div className="font-semibold">Wuko Kitsune</div>
+          <div className="text-sm opacity-60">wuko@wuko.dev</div>
         </div>
       </div>
       <Input
         label="Display name"
-        defaultValue="Vex Kitsune"
+        defaultValue="Wuko Kitsune"
         className="mt-4"
       />
       <Button variant="primary" className="mt-4">

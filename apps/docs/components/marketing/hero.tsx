@@ -12,7 +12,7 @@ export function Hero() {
         <div className="flex flex-col items-center text-center">
           <Image
             src="/brand/wuko.png"
-            alt="Vex"
+            alt="Wuko Kitsune"
             width={144}
             height={144}
             priority

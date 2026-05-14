@@ -103,7 +103,7 @@ export function PeekInsideKit() {
                 <Avatar fallback="V" size="md" status="online" />
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-semibold text-wuko-heading">
-                    Vex Kitsune
+                    Wuko Kitsune
                   </div>
                   <div className="text-[12px] text-wuko-text-muted">
                     Component librarian · 9 tails

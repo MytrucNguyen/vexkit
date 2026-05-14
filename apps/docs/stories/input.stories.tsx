@@ -49,7 +49,7 @@ export const WithRightIcon: Story = {
 export const WithHint: Story = {
   args: {
     label: "Username",
-    defaultValue: "vex",
+    defaultValue: "wuko",
     hint: "Must be 3–20 characters.",
   },
 };

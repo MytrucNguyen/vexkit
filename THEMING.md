@@ -4,7 +4,7 @@ Wuko's public theming surface is a small set of CSS custom properties (`--wuko-*
 
 ## Palette origin
 
-Wuko's role tokens align with the Vex mascot palette. The dark-mode `--wuko-bg` (`#0f172a`) matches the mascot's navy outline, `--wuko-accent` (`#5eead4`) matches its mint fur, and `--wuko-gold` (`#d4a017`) matches its crown and glasses rim. Light-mode values are tuned for WCAG AA contrast on the inverted surface.
+Wuko's role tokens align with the Wuko mascot palette. The dark-mode `--wuko-bg` (`#0f172a`) matches the mascot's navy outline, `--wuko-accent` (`#5eead4`) matches its mint fur, and `--wuko-gold` (`#d4a017`) matches its crown and glasses rim. Light-mode values are tuned for WCAG AA contrast on the inverted surface.
 
 ## Public role tokens
 
