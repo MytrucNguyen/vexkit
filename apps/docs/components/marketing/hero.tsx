@@ -25,7 +25,7 @@ export function Hero() {
           </div>
 
           <h1 className="mb-5 text-5xl font-extrabold tracking-tight text-wuko-heading lg:text-7xl">
-            Vex<span className="text-wuko-accent">Kit</span>
+            Wuko
           </h1>
 
           <p className="max-w-2xl text-lg leading-relaxed text-wuko-text lg:text-xl">

@@ -39,7 +39,7 @@ export function Header() {
             aria-hidden
           />
           <span className="text-[18px] font-extrabold tracking-tight text-wuko-heading">
-            Vex<span className="text-wuko-accent">Kit</span>
+            Wuko
           </span>
         </Link>
 

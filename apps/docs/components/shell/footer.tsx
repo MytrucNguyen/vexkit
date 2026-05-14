@@ -14,7 +14,7 @@ export function Footer() {
             aria-hidden
           />
           <span className="text-[15px] font-extrabold tracking-tight text-wuko-heading">
-            Vex<span className="text-wuko-accent">Kit</span>
+            Wuko
           </span>
         </div>
         <span className="text-xs text-wuko-text-muted">
