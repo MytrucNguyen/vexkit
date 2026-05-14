@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Pager } from "@/components/docs/pager";
 
 export const metadata = {
-  title: "Components | VexKit",
+  title: "Components | Wuko",
 };
 
 const COMPONENTS = [
@@ -77,7 +77,7 @@ export default function ComponentsIndexPage() {
           Components
         </h1>
         <p className="text-[15px] leading-relaxed text-wuko-text">
-          Browse the full set of VexKit components. Each one is themeable,
+          Browse the full set of Wuko components. Each one is themeable,
           accessible, and ships with full keyboard support.
         </p>
       </header>

@@ -8,7 +8,7 @@ import { PropsTable } from "@/components/docs/props-table";
 import { Button } from "@/registry/default/ui/button";
 
 export const metadata = {
-  title: "Button | VexKit",
+  title: "Button | Wuko",
 };
 
 const USAGE_SAMPLE = `import { Button } from "@/components/ui/button";

@@ -70,7 +70,7 @@ export function PeekInsideKit() {
             <div className="w-full max-w-sm space-y-4">
               <Input
                 label="Email"
-                placeholder="you@vexkit.dev"
+                placeholder="you@wuko.dev"
                 leftIcon={<Mail className="size-4" />}
               />
               <Input

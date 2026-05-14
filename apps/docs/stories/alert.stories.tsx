@@ -18,7 +18,7 @@ const meta = {
   },
   args: {
     variant: "info",
-    children: "A new version of VexKit is available.",
+    children: "A new version of Wuko is available.",
   },
 } satisfies Meta<typeof Alert>;
 

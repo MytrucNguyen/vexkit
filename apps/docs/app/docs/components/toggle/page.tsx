@@ -7,7 +7,7 @@ import { PropsTable } from "@/components/docs/props-table";
 import { ToggleExample } from "./toggle-example";
 
 export const metadata = {
-  title: "Toggle | VexKit",
+  title: "Toggle | Wuko",
 };
 
 const USAGE_SAMPLE = `"use client";

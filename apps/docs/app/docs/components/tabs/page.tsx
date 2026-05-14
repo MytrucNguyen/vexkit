@@ -11,7 +11,7 @@ import {
 } from "./tabs-example";
 
 export const metadata = {
-  title: "Tabs | VexKit",
+  title: "Tabs | Wuko",
 };
 
 const USAGE_SAMPLE = `import {

@@ -10,7 +10,7 @@ import { Input } from "@/registry/default/ui/input";
 import { PasswordExample } from "./password-example";
 
 export const metadata = {
-  title: "Input | VexKit",
+  title: "Input | Wuko",
 };
 
 const USAGE_SAMPLE = `import { Input } from "@/components/ui/input";
@@ -69,7 +69,7 @@ export function PasswordField() {
   );
 }`;
 
-const DISABLED_SAMPLE = `<Input label="Read-only" disabled defaultValue="vex@vexkit.dev" />`;
+const DISABLED_SAMPLE = `<Input label="Read-only" disabled defaultValue="vex@wuko.dev" />`;
 
 const PROPS_ROWS = [
   {
@@ -258,7 +258,7 @@ export default function InputPage() {
       <H2 id="disabled">Disabled</H2>
       <ExampleSurface>
         <div className="max-w-sm">
-          <Input label="Read-only" disabled defaultValue="vex@vexkit.dev" />
+          <Input label="Read-only" disabled defaultValue="vex@wuko.dev" />
         </div>
       </ExampleSurface>
       <CodeBlock lang="tsx" code={DISABLED_SAMPLE} />
@@ -286,7 +286,7 @@ export default function InputPage() {
           The hint or error message gets a unique id (suffixed{" "}
           <code>-msg</code>). The input&apos;s <code>aria-describedby</code>{" "}
           points at it. If you pass your own <code>aria-describedby</code>,
-          VexKit merges yours with the message id rather than overwriting.
+          Wuko merges yours with the message id rather than overwriting.
         </li>
         <li>
           Focus uses{" "}

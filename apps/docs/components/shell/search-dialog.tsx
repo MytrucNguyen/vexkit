@@ -82,9 +82,9 @@ const DEFAULTS: Row[] = [
   { key: "d:tabs", url: "/docs/components/tabs", title: "Tabs", excerpt: "Switch between content panels", category: "Components" },
   { key: "d:toggle", url: "/docs/components/toggle", title: "Toggle", excerpt: "Binary on/off control", category: "Components" },
   { key: "d:tooltip", url: "/docs/components/tooltip", title: "Tooltip", excerpt: "Contextual hover hint", category: "Components" },
-  { key: "d:home", url: "/", title: "Home", excerpt: "VexKit landing page", category: "Pages" },
+  { key: "d:home", url: "/", title: "Home", excerpt: "Wuko landing page", category: "Pages" },
   { key: "d:components", url: "/docs/components", title: "Components", excerpt: "Browse all components", category: "Pages" },
-  { key: "d:installation", url: "/docs/installation", title: "Installation", excerpt: "Set up VexKit in your app", category: "Pages" },
+  { key: "d:installation", url: "/docs/installation", title: "Installation", excerpt: "Set up Wuko in your app", category: "Pages" },
   { key: "d:quick-start", url: "/docs/quick-start", title: "Quick Start", excerpt: "Build your first page", category: "Pages" },
 ];
 
@@ -103,7 +103,7 @@ export function SearchDialog() {
             Search documentation
           </DialogPrimitive.Title>
           <DialogPrimitive.Description className="sr-only">
-            Type a query to search VexKit documentation.
+            Type a query to search Wuko documentation.
           </DialogPrimitive.Description>
 
           <SearchPalette onClose={() => setOpen(false)} />

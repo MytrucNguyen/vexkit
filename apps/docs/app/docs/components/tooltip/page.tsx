@@ -7,7 +7,7 @@ import { PropsTable } from "@/components/docs/props-table";
 import { TooltipExample } from "./tooltip-example";
 
 export const metadata = {
-  title: "Tooltip | VexKit",
+  title: "Tooltip | Wuko",
 };
 
 const USAGE_SAMPLE = `import { Bell, Trash2, Zap } from "lucide-react";

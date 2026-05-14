@@ -9,7 +9,7 @@ export interface PlaceholderProps
 export const Placeholder = React.forwardRef<
   HTMLDivElement,
   PlaceholderProps
->(({ label = "VexKit placeholder", className, ...props }, ref) => {
+>(({ label = "Wuko placeholder", className, ...props }, ref) => {
   return (
     <div
       ref={ref}

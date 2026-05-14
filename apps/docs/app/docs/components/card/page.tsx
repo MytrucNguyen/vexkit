@@ -6,7 +6,7 @@ import { PropsTable } from "@/components/docs/props-table";
 import { Card } from "@/registry/default/ui/card";
 
 export const metadata = {
-  title: "Card | VexKit",
+  title: "Card | Wuko",
 };
 
 const USAGE_SAMPLE = `import { Card } from "@/components/ui/card";

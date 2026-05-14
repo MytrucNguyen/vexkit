@@ -7,7 +7,7 @@ import { PropsTable } from "@/components/docs/props-table";
 import { AvatarSizesExample, AvatarStatusExample } from "./avatar-example";
 
 export const metadata = {
-  title: "Avatar | VexKit",
+  title: "Avatar | Wuko",
 };
 
 const SIZES_SAMPLE = `import { Avatar } from "@/components/ui/avatar";
@@ -19,7 +19,7 @@ export function ProfileRow() {
       <Avatar fallback="VK" size="md" />
       <Avatar
         src="/vex.png"
-        alt="Vex, the VexKit mascot"
+        alt="Vex, the Wuko mascot"
         fallback="VK"
         size="lg"
       />

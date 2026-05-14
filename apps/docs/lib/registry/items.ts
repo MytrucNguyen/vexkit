@@ -1,9 +1,9 @@
 import type { RegistrySource } from "./types";
 
 export const REGISTRY_AUTHOR =
-  "VexKit (https://github.com/MytrucNguyen/vexkit)";
+  "Wuko (https://github.com/MytrucNguyen/vexkit)";
 
-export const REGISTRY_NAME = "vexkit";
+export const REGISTRY_NAME = "wuko";
 
 export const REGISTRY_ITEMS: RegistrySource[] = [
   {
@@ -11,7 +11,7 @@ export const REGISTRY_ITEMS: RegistrySource[] = [
     type: "registry:ui",
     title: "Placeholder",
     description:
-      "Phase 3 plumbing test for the VexKit registry. Real primitives ship from Phase 5 onward.",
+      "Phase 3 plumbing test for the Wuko registry. Real primitives ship from Phase 5 onward.",
     author: REGISTRY_AUTHOR,
     files: [
       {

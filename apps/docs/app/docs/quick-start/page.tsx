@@ -4,7 +4,7 @@ import { InfoCallout } from "@/components/docs/info-callout";
 import { Pager } from "@/components/docs/pager";
 
 export const metadata = {
-  title: "Quick Start | VexKit",
+  title: "Quick Start | Wuko",
 };
 
 const PROFILE_CARD_SAMPLE = `import { Avatar } from "@/components/ui/avatar";
@@ -19,7 +19,7 @@ export function ProfileCard() {
         <Avatar fallback="V" status="online" />
         <div>
           <div className="font-semibold">Vex Kitsune</div>
-          <div className="text-sm opacity-60">vex@vexkit.dev</div>
+          <div className="text-sm opacity-60">vex@wuko.dev</div>
         </div>
       </div>
       <Input
@@ -45,7 +45,7 @@ export default function QuickStartPage() {
           Quick Start
         </h1>
         <p className="text-[15px] leading-relaxed text-wuko-text">
-          Build a sign-in card in two minutes, composing VexKit&apos;s
+          Build a sign-in card in two minutes, composing Wuko&apos;s
           primitives the way they&apos;re meant to be composed.
         </p>
       </header>

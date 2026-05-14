@@ -7,7 +7,7 @@ export function AvatarSizesExample() {
       <Avatar fallback="VK" size="md" />
       <Avatar
         src="/vex.png"
-        alt="Vex, the VexKit mascot"
+        alt="Vex, the Wuko mascot"
         fallback="VK"
         size="lg"
       />

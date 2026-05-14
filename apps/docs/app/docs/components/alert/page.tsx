@@ -8,7 +8,7 @@ import { Alert } from "@/registry/default/ui/alert";
 import { AlertCloseExample } from "./alert-example";
 
 export const metadata = {
-  title: "Alert | VexKit",
+  title: "Alert | Wuko",
 };
 
 const VARIANTS_SAMPLE = `import { Alert } from "@/components/ui/alert";
@@ -16,7 +16,7 @@ const VARIANTS_SAMPLE = `import { Alert } from "@/components/ui/alert";
 export function AlertVariants() {
   return (
     <div className="space-y-3">
-      <Alert variant="info">A new version of VexKit is available.</Alert>
+      <Alert variant="info">A new version of Wuko is available.</Alert>
       <Alert variant="success">Your changes have been saved.</Alert>
       <Alert variant="warning">Your session expires in 2 minutes.</Alert>
       <Alert variant="danger">Could not connect to the server.</Alert>
@@ -133,7 +133,7 @@ export default function AlertPage() {
       </p>
       <ExampleSurface>
         <div className="space-y-3">
-          <Alert variant="info">A new version of VexKit is available.</Alert>
+          <Alert variant="info">A new version of Wuko is available.</Alert>
           <Alert variant="success">Your changes have been saved.</Alert>
           <Alert variant="warning">
             Your session expires in 2 minutes.

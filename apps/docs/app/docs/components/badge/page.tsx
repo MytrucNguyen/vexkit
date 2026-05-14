@@ -6,7 +6,7 @@ import { PropsTable } from "@/components/docs/props-table";
 import { Badge } from "@/registry/default/ui/badge";
 
 export const metadata = {
-  title: "Badge | VexKit",
+  title: "Badge | Wuko",
 };
 
 const VARIANTS_SAMPLE = `<Badge>Default</Badge>

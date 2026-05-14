@@ -47,7 +47,7 @@ export const WithImage: Story = {
     <Card className="max-w-sm overflow-hidden p-0">
       <Image
         src="/vex.png"
-        alt="Vex, the VexKit mascot"
+        alt="Vex, the Wuko mascot"
         width={384}
         height={160}
         className="h-40 w-full object-cover"
@@ -57,7 +57,7 @@ export const WithImage: Story = {
           Meet Vex
         </div>
         <p className="text-[13px] text-wuko-text-muted">
-          The nine-tailed kitsune behind every VexKit primitive.
+          The nine-tailed kitsune behind every Wuko primitive.
         </p>
       </div>
     </Card>

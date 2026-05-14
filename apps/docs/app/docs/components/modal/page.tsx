@@ -7,7 +7,7 @@ import { PropsTable } from "@/components/docs/props-table";
 import { ModalExample } from "./modal-example";
 
 export const metadata = {
-  title: "Modal | VexKit",
+  title: "Modal | Wuko",
 };
 
 const USAGE_SAMPLE = `"use client";

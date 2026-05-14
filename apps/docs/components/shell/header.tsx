@@ -27,7 +27,7 @@ export function Header() {
 
         <Link
           href="/"
-          aria-label="VexKit home"
+          aria-label="Wuko home"
           className="wk-ring inline-flex select-none items-center gap-2.5 rounded"
         >
           <Image
